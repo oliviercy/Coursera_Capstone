@@ -1,0 +1,1628 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <link crossorigin="" href="//fonts.googleapis.com" rel="preconnect"/>
+  <link as="style" crossorigin="" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&amp;display=swap" rel="preload"/>
+  <link crossorigin="" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+  <style data-emotion-css="">
+  </style>
+  <meta charset="utf-8"/>
+  <link href="/manifest.json" rel="manifest"/>
+  <link href="/opensearch.xml" rel="search" type="application/opensearchdescription+xml"/>
+  <meta content="#ff6e14" name="theme-color"/>
+  <meta content="fr_FR" property="og:locale"/>
+  <meta content="leboncoin" property="og:site_name"/>
+  <meta content="leboncoin" name="twitter:site"/>
+  <meta content='CP="This is not a P3P policy"' http-equiv="P3P"/>
+  <meta content="initial-scale=1.0, width=device-width, maximum-scale=1.0, user-scalable=0" name="viewport"/>
+  <script src="//try.abtasty.com/09643a1c5bc909059579da8aac99e8f1.js" type="text/javascript">
+  </script>
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=AW-837584793">
+  </script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'AW-837584793');
+  </script>
+  <link href="/_next/static/favicon-beta-6ec1781d.png" rel="icon" sizes="16x16" type="image/png"/>
+  <link href="/_next/static/favicon-beta-32-d29e0f1f.png" rel="icon" sizes="32x32" type="image/png"/>
+  <script>
+   window.gdprAppliesGlobally=true;
+  (function(){function n(){if(!window.frames.__cmpLocator){if(document.body&&document.body.firstChild){var e=document.body;var t=document.createElement("iframe");t.style.display="none";t.name="__cmpLocator";t.title="cmpLocator";e.insertBefore(t,e.firstChild)}else{setTimeout(n,5)}}}function e(e,t,n){if(typeof n!=="function"){return}
+  if(!window.__cmpBuffer){window.__cmpBuffer=[]}if(e==="ping"){n({gdprAppliesGlobally:window.gdprAppliesGlobally,cmpLoaded:false},true)}else{window.__cmpBuffer.push({command:e,parameter:t,callback:n})}}e.stub=true;function t(r){if(!window.__cmp||window.__cmp.stub!==true){return}if(!r.data){return}var a=typeof r.data==="string";var e;try{e=a?JSON.parse(r.data):r.data}catch(t){return}if(e.__cmpCall){var o=e.__cmpCall;window.__cmp(o.command,o.parameter,function(e,t){var n={__cmpReturn:{returnValue:e,success:t,callId:o.callId}};r.source.postMessage(a?JSON.stringify(n):n,"*")})}}if(typeof window.__cmp!=="function"){window.__cmp=e;if(window.addEventListener){window.addEventListener("message",t,false)}else{window.attachEvent("onmessage",t)}}n()})();(function(e){var t=document.createElement("script");t.id="spcloader";t.type="text/javascript";t.async=true;t.src="https://sdk.privacy-center.org/"+e+"/loader.js?target="+document.location.hostname;t.charset="utf-8";var n=document.getElementsByTagName("script")[0];
+  n.parentNode.insertBefore(t,n)})("758b10ac-a0a7-421d-b3a2-f77eaa2897e8");
+
+  window.didomiConfig = {
+      app: {
+        apiKey: '758b10ac-a0a7-421d-b3a2-f77eaa2897e8'
+      },
+      notice: {
+        content: {
+          dismiss: {
+            fr: 'J’ai compris'
+          },
+          learnMore: {
+            fr: 'Personnaliser'
+          }
+        }
+      }
+    };
+  </script>
+  <script src="//tag.aticdn.net/598455/smarttag.js">
+  </script>
+  <script>
+   (function(window, document) {
+    /*
+    * Initialise Tracking
+    */
+    if (!window.trackingPreRequest) {
+      window.trackingPreRequest = [];
+    }
+    var ref = document.location.pathname;
+    var sessionStorageAvailable
+    var preReqPagename = null
+
+    try {
+      sessionStorageAvailable = !!window.sessionStorage;
+    } catch(e) {
+      sessionStorageAvailable = false;
+    }
+
+    if (ref === '/' && sessionStorageAvailable) {
+      preReqPagename = 'accueil';
+    }
+
+    if (
+      (ref.indexOf('/offres/') !== -1 ||
+      ref.indexOf('/demandes/') !== -1 ||
+      ref.indexOf('/recherche/') !== -1 ||
+      ref.indexOf('/annonces/') !== -1) && sessionStorageAvailable
+    ) {
+      preReqPagename = 'ad_search';
+    }
+    if (
+      ref.indexOf('.htm') !== -1 &&
+      (
+        ref.indexOf('vi') !== -1 ||
+        ["_vehicules_","voitures","motos","caravaning","utilitaires","equipement_auto","nautisme","_immobilier_","ventes_immobilieres","locations","colocations","locations_gites","bureaux_commerces","_multimedia_","informatique","image_son","telephonie","_maison_","ameublement","electromenager","bricolage","vetements","equipement_bebe","_loisirs_","dvd_films","cd_musique","livres","animaux","sports_hobbies","instruments_de_musique","_services_","equipements_industriels","offres_d_emploi","prestations_de_services","billetterie","cours_particuliers","_divers_","autres","decoration","collection","jeux_jouets","montres_bijoux","consoles_jeux_video","equipement_moto","arts_de_la_table","linge_de_maison","accessoires_bagagerie","vins_gastronomie","evenements","equipement_caravaning","equipement_nautisme","jardinage","chaussures","vetements_bebe","velos","_materiel_professionnel_","materiel_agricole","transport_manutention","btp_chantier_gros_oeuvre","outillage_materiaux_2nd_oeuvre","restauration_hotellerie","fournitures_de_bureau","commerces_marches","materiel_medical","covoiturage","_vacances_","chambres_d_hotes","campings","hebergements_insolites","_emploi_","_mode_","formations_professionnelles"].some(function(channel) {
+          return ref.indexOf(channel) !== -1
+        })
+      ) && sessionStorageAvailable
+    )
+    {
+      preReqPagename = 'ad_view::detail';
+    }
+
+    if(preReqPagename && sessionStorageAvailable) {
+      var trackingPreRequestValue = sessionStorage.getItem('trackingPreRequest') || '';
+      if(trackingPreRequestValue !== '') { trackingPreRequestValue += '___'; }
+
+      trackingPreRequestValue += preReqPagename + '|' + Date.now() + '|' + encodeURIComponent(document.referrer);
+
+      sessionStorage.setItem('trackingPreRequest', trackingPreRequestValue);
+    }
+
+  })(window, document);
+  </script>
+  <script src="//static.criteo.net/js/px.js?ch=1" type="text/javascript">
+  </script>
+  <script src="//static.criteo.net/js/px.js?ch=2" type="text/javascript">
+  </script>
+  <title>
+   Appartement 5 pièces 93 m²
+  </title>
+  <meta content="noindex, nofollow" name="robots"/>
+  <script async="" src="https://www.google.com/adsense/search/ads.js">
+  </script>
+  <script>
+   (function(g,o){g[o]=g[o]||function(){(g[o]['q']=g[o]['q']||[]).push(
+      arguments)},g[o]['t']=1*new Date})(window,'_googCsa');
+  </script>
+  <meta content="Vente Appartement 5 pièces  iad France - Laurence BISSON (07 72 43 18 64) vous propose : JE RESTE JOIGNABLE PENDANT LE CONFINEMENT. Paris 12.  A moins d'une minute du métro Dugommier et des commerces, lumineux appartement traversant de 5 pièces d'une superficie de 92 m² environ, comprenant une entrée, un spacieux séjour, quatre chambres, une cuisine américaine, une salle d'eau  et des wc séparés. Très calme dans une copropriété très bien entretenue. Une cave complète ce bien. Très beaux volumes, double vitrage. A visiter rapidement !  La présente annonce immobilière vise 1 lot principal situé dans une copropriété formant 40 lots au total ne faisant l'objet d'aucune procédure en cours et d'un montant de charges d'environ 338 € par mois (soit 4056 € annuel) déclaré par le vendeur.Honoraires d'agence à la charge du vendeur.Information d'affichage énergétique sur ce bien : DPE D indice 189 et GES E indice 44. La présente annonce immobilière a été rédigée sous la responsabilité éditoriale de Mme Laurence BISSON (ID 28744), Agent Commercial mandataire en immobilier immatriculé au Registre Spécial des Agents Commerciaux (RSAC) du Tribunal de Commerce de CRETEIL sous le numéro 838834836. Référence annonce : 717017 Les honoraires sont à la charge du vendeur  A propos de la copropriété : Pas de procédure en cours Nombre de lots : 76 Charges prévisionnelles annuelles : 4056 €" name="description"/>
+  <meta content="Appartement 5 pièces 93 m²" property="og:title"/>
+  <meta content="website" property="og:type"/>
+  <meta content="https://img6.leboncoin.fr/ad-large/4ddaf4dd8a3fe38ba98cf9b9d72f0d42ad664652.jpg" property="og:image"/>
+  <meta content="https://www.leboncoin.fr/ventes_immobilieres/1725558214.htm/" property="og:url"/>
+  <meta content="Vente Appartement 5 pièces  iad France - Laurence BISSON (07 72 43 18 64) vous propose : JE RESTE JOIGNABLE PENDANT LE CONFINEMENT. Paris 12.  A moins d'une minute du métro Dugommier et des commerces, lumineux appartement traversant de 5 pièces d'une superficie de 92 m² environ, comprenant une entré" property="og:description"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="30" name="next-head-count"/>
+  <link as="style" href="//rav-next-static.leboncoin.fr/_next/static/chunks/styles.824e0217.chunk.css" rel="preload"/>
+  <link href="//rav-next-static.leboncoin.fr/_next/static/chunks/styles.824e0217.chunk.css" rel="stylesheet"/>
+  <link as="script" href="//rav-next-static.leboncoin.fr/_next/static/4atiaycSYB28kT6FCKtNJ/pages/ClassifiedAd.js" rel="preload"/>
+  <link as="script" href="//rav-next-static.leboncoin.fr/_next/static/4atiaycSYB28kT6FCKtNJ/pages/_app.js" rel="preload"/>
+  <link as="script" href="//rav-next-static.leboncoin.fr/_next/static/chunks/styles.022ffcb8a13c0144b8e9.js" rel="preload"/>
+  <link as="script" href="//rav-next-static.leboncoin.fr/_next/static/chunks/133.4865c4fc99fbea2cc741.js" rel="preload"/>
+  <link as="script" href="//rav-next-static.leboncoin.fr/_next/static/chunks/0b7b90cd.1ab0dc96aaace68fcbf2.js" rel="preload"/>
+  <link as="script" href="//rav-next-static.leboncoin.fr/_next/static/chunks/3fc90e8197f3fd1404414d6ea0117e0ae0a71ccf.b2b125e4ecb99005ca76.js" rel="preload"/>
+  <link as="script" href="//rav-next-static.leboncoin.fr/_next/static/chunks/131.5aaa6569e2f29b1db1f7.js" rel="preload"/>
+  <link as="script" href="//rav-next-static.leboncoin.fr/_next/static/chunks/45.41c90bf26945beaf6e8c.js" rel="preload"/>
+  <link as="script" href="//rav-next-static.leboncoin.fr/_next/static/runtime/webpack-dc809ed45d3334ff5b1f.js" rel="preload"/>
+  <link as="script" href="//rav-next-static.leboncoin.fr/_next/static/chunks/framework.eb2c1afe73034d15e0f5.js" rel="preload"/>
+  <link as="script" href="//rav-next-static.leboncoin.fr/_next/static/chunks/11132306.bb9b6039f156b3735a45.js" rel="preload"/>
+  <link as="script" href="//rav-next-static.leboncoin.fr/_next/static/chunks/commons.fe9c3de5f73b497ccc95.js" rel="preload"/>
+  <link as="script" href="//rav-next-static.leboncoin.fr/_next/static/chunks/69aeba1416cdadf8f571a18a70dbab079e85c6c5.64aab9e69e0fd5b1466d.js" rel="preload"/>
+  <link as="script" href="//rav-next-static.leboncoin.fr/_next/static/chunks/2db0458e9889689012228538a670078e58061209.70d21defb6d527e9ffe1.js" rel="preload"/>
+  <link as="script" href="//rav-next-static.leboncoin.fr/_next/static/chunks/ddf6c3912d89ee28e0642c372940e425d7757b7d.8ab8dc194742fab5f8d5.js" rel="preload"/>
+  <link as="script" href="//rav-next-static.leboncoin.fr/_next/static/chunks/130bdf33ff039942d0155643a0c750b44e57a5d2.09604a86b10f45503b8a.js" rel="preload"/>
+  <link as="script" href="//rav-next-static.leboncoin.fr/_next/static/chunks/23b906441f49f946dddbd949df4e1f008977d6da.06c2ebe2ab05a4ee77d9.js" rel="preload"/>
+  <link as="script" href="//rav-next-static.leboncoin.fr/_next/static/chunks/7480f0f03e35850936d6f3ddaf42b46b91ccfe80.2042c5b9c8c06b099f03.js" rel="preload"/>
+  <link as="script" href="//rav-next-static.leboncoin.fr/_next/static/chunks/e80f8e8b99345d2bc3c84aa7c878e4a986fa2eec.7c4fc6ea66774a84d8ae.js" rel="preload"/>
+  <link as="script" href="//rav-next-static.leboncoin.fr/_next/static/chunks/a2bee6e1f61cfb28a396299c30cd7f3586854796.5344b14a1a3c7fd62d1f.js" rel="preload"/>
+  <link as="script" href="//rav-next-static.leboncoin.fr/_next/static/chunks/1bfeb1e3a4905f4940bc5180832d29dc7642b715.4d929fe0ddd4fa3d2fba.js" rel="preload"/>
+  <link as="script" href="//rav-next-static.leboncoin.fr/_next/static/chunks/a236c4a436494cab68080daceebf6f3592f19dcf.95854ae38486abcfb204.js" rel="preload"/>
+  <link as="script" href="//rav-next-static.leboncoin.fr/_next/static/chunks/e3dcc59dcc81b1c9a25956ffec2ed7b87a9b9043.2365bcbd47c75085f205.js" rel="preload"/>
+  <link as="script" href="//rav-next-static.leboncoin.fr/_next/static/chunks/025188821c5917760416918848226d3e73c03e54.d50694589481b95259cc.js" rel="preload"/>
+  <link as="script" href="//rav-next-static.leboncoin.fr/_next/static/chunks/c331c57bea6a3945b645ea4b3ab4a50ccb6517c2.18aab1247b56609153d2.js" rel="preload"/>
+  <link as="script" href="//rav-next-static.leboncoin.fr/_next/static/chunks/b12ebcb7bc1220f3d0e3a01dfe8c2e036372a6c2.5779598692e200e46a71.js" rel="preload"/>
+  <link as="script" href="//rav-next-static.leboncoin.fr/_next/static/chunks/3b043ee6aaf9474606eeb546fcc4b2e97fdd80d9.677256d9128b5d1f1171.js" rel="preload"/>
+  <link as="script" href="//rav-next-static.leboncoin.fr/_next/static/chunks/be51ef284efd6293ebb04c3f90ca4400ffc42db8.27d22ed68292694643e6.js" rel="preload"/>
+  <link as="script" href="//rav-next-static.leboncoin.fr/_next/static/chunks/0b6050362f6efb75431e01a3766765a2c2167d3a.d5e32e163c4af2fc58ac.js" rel="preload"/>
+  <link as="script" href="//rav-next-static.leboncoin.fr/_next/static/chunks/styles.022ffcb8a13c0144b8e9.js" rel="preload"/>
+  <link as="script" href="//rav-next-static.leboncoin.fr/_next/static/runtime/main-fa494c894cb77e9277f9.js" rel="preload"/>
+  <link as="script" href="//rav-next-static.leboncoin.fr/_next/static/chunks/6178c45b67b3838da8c7e763ba9782f95ff37e3c.f5275292ed91f8187dcd.js" rel="preload"/>
+  <link as="script" href="//rav-next-static.leboncoin.fr/_next/static/chunks/0604d6a0570947ab7ad43eb7a237e28ee4584ac0.9dcef2cfa59352424fa6.js" rel="preload"/>
+  <link as="script" href="//rav-next-static.leboncoin.fr/_next/static/chunks/aea9981fc446234a7f47ca700cecaf266c8d4b42.6c88c12875787a12063e.js" rel="preload"/>
+  <link as="script" href="//rav-next-static.leboncoin.fr/_next/static/chunks/cc75e3b140d0724de83363f22cc25aca48e24716.86f8e6e3bda3c1ea51e2.js" rel="preload"/>
+  <link as="script" href="//rav-next-static.leboncoin.fr/_next/static/chunks/4d0192b9f3f9ff48bf9af875c595d027b7259c9f.bc3a9560b0e16053c6e5.js" rel="preload"/>
+  <link as="script" href="//rav-next-static.leboncoin.fr/_next/static/chunks/4927db09598a291f68ef90ae43d72ed7ca612402.d581fb6b534b306c3e38.js" rel="preload"/>
+ </head>
+ <body>
+  <script>
+   !(function(a, b, c, d, e, f) {
+        a.ddjskey = e
+        a.ddoptions = f || null
+        var m = b.createElement(c),
+          n = b.getElementsByTagName(c)[0]
+        ;(m.async = 1), (m.src = d), n.parentNode.insertBefore(m, n)
+      })(window,
+        document,
+        'script',
+        '//js.datadome.co/tags.js',
+        '05B30BD9055986BD2EE8F5A199D973',
+        { ajaxListenerPath: 'api.leboncoin.fr' })
+  </script>
+  <div id="__next">
+   <div>
+    <section class="" id="container">
+     <main class="_1X83S" role="main">
+      <div class="_3mTtf">
+       <div class="_1Ob0P">
+        <header class="_2up2P" role="banner">
+         <div class="_1TRNX a8N1M">
+          <div class="X9VyQ" data-qa-id="mobileButton">
+           <span class="kcRM9 _2HAhZ _27gjm _3Wx6b">
+            <svg height="1em" viewbox="0 0 20 14" width="1em">
+             <path d="M1.111 14H18.89C19.5 14 20 13.475 20 12.833c0-.641-.5-1.166-1.111-1.166H1.11C.5 11.667 0 12.192 0 12.833 0 13.475.5 14 1.111 14zm0-5.833H18.89C19.5 8.167 20 7.642 20 7s-.5-1.167-1.111-1.167H1.11C.5 5.833 0 6.358 0 7s.5 1.167 1.111 1.167zM0 1.167c0 .641.5 1.166 1.111 1.166H18.89C19.5 2.333 20 1.808 20 1.167 20 .525 19.5 0 18.889 0H1.11C.5 0 0 .525 0 1.167z" fill="#1A1A1A" fill-rule="evenodd">
+             </path>
+            </svg>
+           </span>
+          </div>
+          <nav class="_1xp7y">
+           <div class="_3u2Yt">
+            <a href="/">
+             <div class="_3gOKj">
+              <span class="kcRM9 _2HAhZ _27gjm _3Wx6b">
+               <svg height="1em" viewbox="0 0 230 45" width="1em">
+                <path d="M58.29 36.625c3.604-.006 5.83-2.864 5.83-7.11 0-4.25-2.22-7.1-5.82-7.1s-5.81 2.84-5.81 7.1c0 4.256 2.206 7.104 5.8 7.11zm2.7-21.1c6.87 0 11.4 5.92 11.5 13.89 0 8.1-4.74 14.1-11.69 14.1a10 10 0 01-8.66-4.63h-.11v4.11h-7.54V6.915c0-2.75 1.83-4.47 4-4.47s4 1.72 4 4.47v12.86h.11a10.212 10.212 0 018.39-4.25zm27.76 21.1c3.61 0 5.81-2.86 5.81-7.11s-2.2-7.1-5.81-7.1c-3.61 0-5.81 2.84-5.81 7.1s2.2 7.11 5.81 7.11zm0-21.1c8.5 0 14 5.81 14 14 0 8.19-5.49 14-14 14s-14-5.81-14-14c0-8.19 5.49-14 14-14zm106.85 0c2.2 0 4.03 1.72 4.07 4.47v23h-8.07v-23c0-2.75 1.79-4.47 4-4.47zm0-14.05a4.9 4.9 0 010 9.8h-.002a4.9 4.9 0 11.003-9.8zm25.24 14.05c5.6 0 8.61 3.98 8.61 10.01v17.46h-8.07v-15.2c0-3.55-1.67-4.73-3.77-4.73-3.12 0-5.49 2.63-5.49 8.23v11.7h-8.07v-23.25c0-2.64 1.73-4.2 3.77-4.2s3.76 1.56 3.76 4.2v1h.11a10.637 10.637 0 019.15-5.22zm-46.67 21.1c3.61 0 5.82-2.86 5.82-7.11s-2.219-7.1-5.82-7.1c-3.6 0-5.81 2.84-5.81 7.1s2.21 7.11 5.81 7.11zm0-21.1c8.511 0 14 5.81 14 14 0 8.19-5.489 14-14 14-8.51 0-14-5.81-14-14 0-8.19 5.5-14 14-14zm-25.94 7c-3.5 0-5.65 2.58-5.65 7s2.15 7 5.65 7a5.407 5.407 0 004.9-2.69h.1l5.87 3.77c-2.04 3.98-6.3 5.92-11.14 5.92-8.4 0-13.57-5.81-13.57-14 0-8.19 5.17-14 13.57-14 4.84 0 9.14 1.92 11.14 5.92l-5.87 3.77h-.1a5.406 5.406 0 00-4.9-2.69zm-25.46-7c5.6 0 8.61 3.98 8.63 10.01v17.46h-8.07v-15.2c0-3.55-1.67-4.73-3.77-4.73-3.12 0-5.49 2.63-5.49 8.23v11.7h-8.08v-23.27c0-2.64 1.7-4.18 3.75-4.18s3.77 1.56 3.77 4.2v1h.11a10.627 10.627 0 019.15-5.22zm-100.23 12.4a9.966 9.966 0 00.54 3.01l9-6.67a4.48 4.48 0 00-4.12-2.34c-2.55 0-5.42 1.92-5.42 6zm7.82 9a8.32 8.32 0 006.89-4.44l5.31 3.84c-2.03 4.13-6.17 7.19-13.17 7.19a13.68 13.68 0 01-9-3.4c-3.52 2.34-6.52 3.34-9.52 3.34-6.05 0-10.32-4.05-10.32-10.13V6.845c0-2.74 1.82-4.46 4-4.46 2.18 0 4 1.72 4 4.46v25.81c0 2.6 1.14 4 3.53 4 1.3 0 2.71-.75 4.54-1.75a16.647 16.647 0 01-1.3-6.57c0-5.71 4.07-12.81 12.62-12.81 7.41 0 11.39 4.31 13.05 9.72l-14.27 10.24a5.181 5.181 0 003.64 1.44z" fill="#000" fill-rule="evenodd">
+                </path>
+               </svg>
+              </span>
+             </div>
+            </a>
+            <a class="_21T6_" data-qa-id="header_newad_link" href="/deposer-une-annonce/" title="Déposer une annonce">
+             <div class="_3vGBM _3qcDW">
+              <div class="RDRRd">
+               <span class="kcRM9 _1eo84 _21dth _3Wx6b">
+                <svg data-name="Calque 1" height="1em" viewbox="0 0 24 24" width="1em">
+                 <path d="M17.33 10.67h-4v-4a1.33 1.33 0 10-2.66 0v4h-4a1.33 1.33 0 100 2.66h4v4a1.33 1.33 0 102.66 0v-4h4a1.33 1.33 0 100-2.66z">
+                 </path>
+                 <path d="M21.6 0H2.4A2.41 2.41 0 000 2.4v19.2A2.41 2.41 0 002.4 24h19.2a2.41 2.41 0 002.4-2.4V2.4A2.41 2.41 0 0021.6 0zm0 20.4a1.2 1.2 0 01-1.2 1.2H3.6a1.2 1.2 0 01-1.2-1.2V3.6a1.2 1.2 0 011.2-1.2h16.8a1.2 1.2 0 011.2 1.2v16.8z">
+                 </path>
+                </svg>
+               </span>
+              </div>
+              <span data-text="Déposer une annonce">
+               Déposer une annonce
+              </span>
+             </div>
+            </a>
+            <a href="/annonces/offres/" title="Rechercher">
+             <div class="_3vGBM">
+              <div class="RDRRd">
+               <span class="kcRM9 _1eo84 _39qPR _3Wx6b">
+                <svg data-name="Calque 1" height="1em" viewbox="0 0 24 24" width="1em">
+                 <path d="M23.58 21.45l-7-7a9.42 9.42 0 001.62-6.87A9.13 9.13 0 0010.34.07a9.25 9.25 0 00-2.81 18.27 9.25 9.25 0 007-1.76l7 7a1.54 1.54 0 002.11 0 1.56 1.56 0 00-.06-2.13zM9.22 15.5a6.37 6.37 0 116.33-6.37 6.33 6.33 0 01-6.33 6.37z">
+                 </path>
+                </svg>
+               </span>
+              </div>
+              <span data-text="Rechercher">
+               Rechercher
+              </span>
+             </div>
+            </a>
+           </div>
+           <div class="_3u2Yt">
+            <a href="/mes-recherches/" title="Mes recherches">
+             <div class="_3vGBM _19I6a">
+              <div class="RDRRd">
+               <span class="kcRM9 _1eo84 _39qPR _3Wx6b">
+                <svg data-name="Calque 1" height="1em" viewbox="0 0 24 24" width="1em">
+                 <path d="M12 24a2.49 2.49 0 002.5-2.46h-5A2.48 2.48 0 0012 24zM21.13 18.2l-1.62-1.58v-6.16c0-3.78-2.05-6.94-5.63-7.78v-.83a1.88 1.88 0 00-3.76 0v.83c-3.59.84-5.63 4-5.63 7.78v6.16L2.87 18.2a1.23 1.23 0 00.88 2.11h16.49a1.23 1.23 0 00.89-2.11zM17 17.85H7v-7.39c0-3.05 1.89-5.54 5-5.54s5 2.49 5 5.54z">
+                 </path>
+                </svg>
+               </span>
+              </div>
+              <span data-text="Mes recherches">
+               Mes recherches
+              </span>
+             </div>
+            </a>
+            <a href="/mes-annonces/" title="Favoris">
+             <div class="_3vGBM _19I6a">
+              <div class="RDRRd">
+               <span class="kcRM9 _1eo84 _39qPR _3Wx6b">
+                <svg data-name="Calque 1" height="1em" viewbox="0 0 24 24" width="1em">
+                 <path d="M21.19 2.24A6.76 6.76 0 0012 3.61a6.76 6.76 0 00-9.19-1.37A6.89 6.89 0 000 7.58c-.16 4.84 4 8.72 10.26 14.66l.12.12a2.32 2.32 0 003.23 0l.13-.12C20 16.29 24.15 12.41 24 7.57a6.89 6.89 0 00-2.81-5.33zm-9.07 18.15l-.12.12-.12-.12C6.17 15 2.4 11.46 2.4 7.86a4.18 4.18 0 014.2-4.37 4.68 4.68 0 014.28 3h2.25a4.66 4.66 0 014.27-3 4.18 4.18 0 014.2 4.37c0 3.6-3.77 7.14-9.48 12.53z">
+                 </path>
+                </svg>
+               </span>
+              </div>
+              <span data-text="Favoris">
+               Favoris
+              </span>
+             </div>
+            </a>
+            <a href="/messages" title="Messages">
+             <div class="_3vGBM _19I6a">
+              <div class="RDRRd">
+               <span class="kcRM9 _1eo84 _39qPR _3Wx6b">
+                <svg data-name="Calque 1" height="1em" viewbox="0 0 24 24" width="1em">
+                 <path d="M18 12h-7.2a1.13 1.13 0 00-1.2 1.2 1.13 1.13 0 001.2 1.2H18a1.2 1.2 0 000-2.4zM6 7.2h12A1.13 1.13 0 0019.2 6 1.13 1.13 0 0018 4.8H6a1.2 1.2 0 000 2.4z">
+                 </path>
+                 <path d="M21.6 0H2.4A2.41 2.41 0 000 2.4v14.4a2.41 2.41 0 002.4 2.4h16.8L24 24V2.4A2.41 2.41 0 0021.6 0zm0 18.24l-1.44-1.44H2.4V2.4h19.2z">
+                 </path>
+                 <path d="M6 10.8h12a1.13 1.13 0 001.2-1.2A1.13 1.13 0 0018 8.4H6a1.2 1.2 0 100 2.4z">
+                 </path>
+                </svg>
+               </span>
+              </div>
+              <span data-text="Messages">
+               Messages
+              </span>
+             </div>
+            </a>
+            <div class="_3vGBM _2pUbg _19I6a">
+             <div class="RDRRd">
+              <span class="kcRM9 _1eo84 _39qPR _3Wx6b">
+               <svg data-name="Calque 1" height="1em" viewbox="0 0 24 24" width="1em">
+                <path d="M12 12a5.92 5.92 0 005.86-6A5.93 5.93 0 0012 0a5.93 5.93 0 00-5.86 6A5.92 5.92 0 0012 12zm0-9a3 3 0 11-2.93 3A3 3 0 0112 3zM22.46 22.13a10.68 10.68 0 00-10.46-8 10.68 10.68 0 00-10.46 8A1.5 1.5 0 002.61 24a1.46 1.46 0 001.78-1.08A7.72 7.72 0 0112 17.09a7.72 7.72 0 017.61 5.78A1.48 1.48 0 0021 24a1.12 1.12 0 00.36-.05 1.5 1.5 0 001.1-1.82z">
+                </path>
+               </svg>
+              </span>
+             </div>
+             <span data-text="[object Object]">
+              <div>
+               <span class="_1xNum">
+                .
+               </span>
+               <span class="_1xNum">
+                .
+               </span>
+               <span class="_1xNum">
+                .
+               </span>
+              </div>
+             </span>
+            </div>
+           </div>
+          </nav>
+          <div class="X9VyQ">
+          </div>
+         </div>
+         <div class="_5VZiG">
+          <div class="_1MjQ5">
+          </div>
+          <div class="_2hbax" data-qa-id="closeButton">
+           <span class="kcRM9 _1bI-U _21dth _3Wx6b">
+            <svg data-name="Calque 1" height="1em" viewbox="0 0 24 24" width="1em">
+             <path d="M23.47 20.9l-8.9-8.9 8.9-8.9A1.81 1.81 0 0020.9.55L12 9.43 3.1.53A1.82 1.82 0 00.53 3.1l8.9 8.9-8.9 8.9a1.82 1.82 0 002.57 2.57l8.9-8.9 8.9 8.9a1.82 1.82 0 002.57-2.57z">
+             </path>
+            </svg>
+           </span>
+          </div>
+          <div class="_191Ez">
+           <div class="PmhZd">
+            <a href="/">
+             <div class="_3gOKj">
+              <span class="kcRM9 _2HAhZ _27gjm _3Wx6b">
+               <svg height="1em" viewbox="0 0 230 45" width="1em">
+                <path d="M58.29 36.625c3.604-.006 5.83-2.864 5.83-7.11 0-4.25-2.22-7.1-5.82-7.1s-5.81 2.84-5.81 7.1c0 4.256 2.206 7.104 5.8 7.11zm2.7-21.1c6.87 0 11.4 5.92 11.5 13.89 0 8.1-4.74 14.1-11.69 14.1a10 10 0 01-8.66-4.63h-.11v4.11h-7.54V6.915c0-2.75 1.83-4.47 4-4.47s4 1.72 4 4.47v12.86h.11a10.212 10.212 0 018.39-4.25zm27.76 21.1c3.61 0 5.81-2.86 5.81-7.11s-2.2-7.1-5.81-7.1c-3.61 0-5.81 2.84-5.81 7.1s2.2 7.11 5.81 7.11zm0-21.1c8.5 0 14 5.81 14 14 0 8.19-5.49 14-14 14s-14-5.81-14-14c0-8.19 5.49-14 14-14zm106.85 0c2.2 0 4.03 1.72 4.07 4.47v23h-8.07v-23c0-2.75 1.79-4.47 4-4.47zm0-14.05a4.9 4.9 0 010 9.8h-.002a4.9 4.9 0 11.003-9.8zm25.24 14.05c5.6 0 8.61 3.98 8.61 10.01v17.46h-8.07v-15.2c0-3.55-1.67-4.73-3.77-4.73-3.12 0-5.49 2.63-5.49 8.23v11.7h-8.07v-23.25c0-2.64 1.73-4.2 3.77-4.2s3.76 1.56 3.76 4.2v1h.11a10.637 10.637 0 019.15-5.22zm-46.67 21.1c3.61 0 5.82-2.86 5.82-7.11s-2.219-7.1-5.82-7.1c-3.6 0-5.81 2.84-5.81 7.1s2.21 7.11 5.81 7.11zm0-21.1c8.511 0 14 5.81 14 14 0 8.19-5.489 14-14 14-8.51 0-14-5.81-14-14 0-8.19 5.5-14 14-14zm-25.94 7c-3.5 0-5.65 2.58-5.65 7s2.15 7 5.65 7a5.407 5.407 0 004.9-2.69h.1l5.87 3.77c-2.04 3.98-6.3 5.92-11.14 5.92-8.4 0-13.57-5.81-13.57-14 0-8.19 5.17-14 13.57-14 4.84 0 9.14 1.92 11.14 5.92l-5.87 3.77h-.1a5.406 5.406 0 00-4.9-2.69zm-25.46-7c5.6 0 8.61 3.98 8.63 10.01v17.46h-8.07v-15.2c0-3.55-1.67-4.73-3.77-4.73-3.12 0-5.49 2.63-5.49 8.23v11.7h-8.08v-23.27c0-2.64 1.7-4.18 3.75-4.18s3.77 1.56 3.77 4.2v1h.11a10.627 10.627 0 019.15-5.22zm-100.23 12.4a9.966 9.966 0 00.54 3.01l9-6.67a4.48 4.48 0 00-4.12-2.34c-2.55 0-5.42 1.92-5.42 6zm7.82 9a8.32 8.32 0 006.89-4.44l5.31 3.84c-2.03 4.13-6.17 7.19-13.17 7.19a13.68 13.68 0 01-9-3.4c-3.52 2.34-6.52 3.34-9.52 3.34-6.05 0-10.32-4.05-10.32-10.13V6.845c0-2.74 1.82-4.46 4-4.46 2.18 0 4 1.72 4 4.46v25.81c0 2.6 1.14 4 3.53 4 1.3 0 2.71-.75 4.54-1.75a16.647 16.647 0 01-1.3-6.57c0-5.71 4.07-12.81 12.62-12.81 7.41 0 11.39 4.31 13.05 9.72l-14.27 10.24a5.181 5.181 0 003.64 1.44z" fill="#000" fill-rule="evenodd">
+                </path>
+               </svg>
+              </span>
+             </div>
+            </a>
+           </div>
+           <div class="tqG9K">
+            <a data-qa-id="mobile_newad_link" href="/deposer-une-annonce/" title="Déposer une annonce">
+             <div class="qGTP0 _2a_FE TyF8i _33ELO">
+              <div class="_yhIH">
+               <span class="kcRM9 _1bI-U _39qPR _3Wx6b">
+                <svg data-name="Calque 1" height="1em" viewbox="0 0 24 24" width="1em">
+                 <path d="M17.33 10.67h-4v-4a1.33 1.33 0 10-2.66 0v4h-4a1.33 1.33 0 100 2.66h4v4a1.33 1.33 0 102.66 0v-4h4a1.33 1.33 0 100-2.66z">
+                 </path>
+                 <path d="M21.6 0H2.4A2.41 2.41 0 000 2.4v19.2A2.41 2.41 0 002.4 24h19.2a2.41 2.41 0 002.4-2.4V2.4A2.41 2.41 0 0021.6 0zm0 20.4a1.2 1.2 0 01-1.2 1.2H3.6a1.2 1.2 0 01-1.2-1.2V3.6a1.2 1.2 0 011.2-1.2h16.8a1.2 1.2 0 011.2 1.2v16.8z">
+                 </path>
+                </svg>
+               </span>
+              </div>
+              Déposer une annonce
+             </div>
+            </a>
+            <a href="/annonces/offres/" title="Rechercher">
+             <div class="qGTP0 _2a_FE TyF8i _33ELO">
+              <div class="_yhIH">
+               <span class="kcRM9 _1bI-U _39qPR _3Wx6b">
+                <svg data-name="Calque 1" height="1em" viewbox="0 0 24 24" width="1em">
+                 <path d="M23.58 21.45l-7-7a9.42 9.42 0 001.62-6.87A9.13 9.13 0 0010.34.07a9.25 9.25 0 00-2.81 18.27 9.25 9.25 0 007-1.76l7 7a1.54 1.54 0 002.11 0 1.56 1.56 0 00-.06-2.13zM9.22 15.5a6.37 6.37 0 116.33-6.37 6.33 6.33 0 01-6.33 6.37z">
+                 </path>
+                </svg>
+               </span>
+              </div>
+              Rechercher
+             </div>
+            </a>
+            <div class="_15mEx HlrAk">
+            </div>
+            <a href="/messages" title="Messages">
+             <div class="qGTP0 _2a_FE TyF8i _33ELO">
+              <div class="_yhIH">
+               <span class="kcRM9 _1bI-U _39qPR _3Wx6b">
+                <svg data-name="Calque 1" height="1em" viewbox="0 0 24 24" width="1em">
+                 <path d="M18 12h-7.2a1.13 1.13 0 00-1.2 1.2 1.13 1.13 0 001.2 1.2H18a1.2 1.2 0 000-2.4zM6 7.2h12A1.13 1.13 0 0019.2 6 1.13 1.13 0 0018 4.8H6a1.2 1.2 0 000 2.4z">
+                 </path>
+                 <path d="M21.6 0H2.4A2.41 2.41 0 000 2.4v14.4a2.41 2.41 0 002.4 2.4h16.8L24 24V2.4A2.41 2.41 0 0021.6 0zm0 18.24l-1.44-1.44H2.4V2.4h19.2z">
+                 </path>
+                 <path d="M6 10.8h12a1.13 1.13 0 001.2-1.2A1.13 1.13 0 0018 8.4H6a1.2 1.2 0 100 2.4z">
+                 </path>
+                </svg>
+               </span>
+              </div>
+              Messages
+             </div>
+            </a>
+            <a href="/mes-annonces/" title="Favoris">
+             <div class="qGTP0 _2a_FE TyF8i _33ELO">
+              <div class="_yhIH">
+               <span class="kcRM9 _1bI-U _39qPR _3Wx6b">
+                <svg data-name="Calque 1" height="1em" viewbox="0 0 24 24" width="1em">
+                 <path d="M21.19 2.24A6.76 6.76 0 0012 3.61a6.76 6.76 0 00-9.19-1.37A6.89 6.89 0 000 7.58c-.16 4.84 4 8.72 10.26 14.66l.12.12a2.32 2.32 0 003.23 0l.13-.12C20 16.29 24.15 12.41 24 7.57a6.89 6.89 0 00-2.81-5.33zm-9.07 18.15l-.12.12-.12-.12C6.17 15 2.4 11.46 2.4 7.86a4.18 4.18 0 014.2-4.37 4.68 4.68 0 014.28 3h2.25a4.66 4.66 0 014.27-3 4.18 4.18 0 014.2 4.37c0 3.6-3.77 7.14-9.48 12.53z">
+                 </path>
+                </svg>
+               </span>
+              </div>
+              Favoris
+             </div>
+            </a>
+            <a href="/mes-recherches/" title="Recherches sauvegardées">
+             <div class="qGTP0 _2a_FE TyF8i _33ELO">
+              <div class="_yhIH">
+               <span class="kcRM9 _1bI-U _39qPR _3Wx6b">
+                <svg data-name="Calque 1" height="1em" viewbox="0 0 24 24" width="1em">
+                 <path d="M12 24a2.49 2.49 0 002.5-2.46h-5A2.48 2.48 0 0012 24zM21.13 18.2l-1.62-1.58v-6.16c0-3.78-2.05-6.94-5.63-7.78v-.83a1.88 1.88 0 00-3.76 0v.83c-3.59.84-5.63 4-5.63 7.78v6.16L2.87 18.2a1.23 1.23 0 00.88 2.11h16.49a1.23 1.23 0 00.89-2.11zM17 17.85H7v-7.39c0-3.05 1.89-5.54 5-5.54s5 2.49 5 5.54z">
+                 </path>
+                </svg>
+               </span>
+              </div>
+              Recherches sauvegardées
+             </div>
+            </a>
+           </div>
+           <div class="tqG9K _2Jfzv">
+            <div data-qa-id="mobile_login">
+             <div class="qGTP0 _21Kdh TyF8i _33ELO">
+              Se connecter
+             </div>
+            </div>
+            <div class="_15mEx HlrAk">
+            </div>
+            <div class="qGTP0 _2a_FE _1gOPh _3Z-yt">
+             <div class="_yhIH">
+              <span class="kcRM9 _1l5Un _3T5YK _3Wx6b">
+               <svg data-name="Calque 1" height="1em" viewbox="0 0 24 24" width="1em">
+                <path d="M18.38 10.49L8.62.63a2.1 2.1 0 00-3 0 2.15 2.15 0 000 3L13.87 12l-8.25 8.32a2.2 2.2 0 000 3.05 2.1 2.1 0 003 0l9.76-9.86a2.14 2.14 0 000-3.02z">
+                </path>
+               </svg>
+              </span>
+             </div>
+             Informations pratiques
+            </div>
+            <div class="qGTP0 _2a_FE _1gOPh _3Z-yt">
+             <div class="_yhIH">
+              <span class="kcRM9 _1l5Un _3T5YK _3Wx6b">
+               <svg data-name="Calque 1" height="1em" viewbox="0 0 24 24" width="1em">
+                <path d="M18.38 10.49L8.62.63a2.1 2.1 0 00-3 0 2.15 2.15 0 000 3L13.87 12l-8.25 8.32a2.2 2.2 0 000 3.05 2.1 2.1 0 003 0l9.76-9.86a2.14 2.14 0 000-3.02z">
+                </path>
+               </svg>
+              </span>
+             </div>
+             leboncoin Groupe
+            </div>
+           </div>
+          </div>
+         </div>
+        </header>
+       </div>
+       <noscript>
+        <div class="_20fZ0">
+         <div class="_1E2Iw _3ipBx _1A4pY">
+          <div class="PdpKw">
+           <span class="_3phUw">
+            Attention :
+           </span>
+          </div>
+          <div>
+           Activez JavaScript pour profiter de toutes les fonctionnalités de leboncoin
+          </div>
+         </div>
+        </div>
+       </noscript>
+       <div class="Q9ISj">
+        <div class="_2gSS5" data-qa-id="navbar_container">
+         <div class="yWFfm">
+          <div data-pub-id="clicknumero" data-qa-id="adview_button_phone_navbar">
+           <div>
+            <div class="XbiJ1">
+             <div>
+              <div class="_2_Cd_">
+               <div class="_2LnD0">
+                <span class="kcRM9 _1bI-U _3Wx6b">
+                 <svg data-name="Calque 1" height="1em" viewbox="0 0 24 24" width="1em">
+                  <path d="M21.65 16.37l-3.4-.37a2.69 2.69 0 00-2.19.76l-2.45 2.44a20.11 20.11 0 01-8.81-8.81l2.47-2.47A2.61 2.61 0 008 5.73l-.35-3.37A2.68 2.68 0 005 0H2.68A2.66 2.66 0 000 2.77 22.71 22.71 0 0021.23 24 2.66 2.66 0 0024 21.32V19a2.64 2.64 0 00-2.35-2.63z">
+                  </path>
+                 </svg>
+                </span>
+               </div>
+               Contacter
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="yWFfm">
+          <div data-qa-id="adview_button_contact_navbar">
+           <div>
+            <div class="_3xrDA">
+             <a>
+              <div class="_2_Cd_">
+               <div class="_2LnD0">
+                <span class="kcRM9 _1bI-U _3Wx6b">
+                 <svg data-name="Calque 1" height="1em" viewbox="0 0 24 24" width="1em">
+                  <path d="M21.6 2.5H2.4A2.39 2.39 0 000 4.88v14.24a2.4 2.4 0 002.4 2.38h19.2a2.4 2.4 0 002.4-2.38V4.88a2.4 2.4 0 00-2.4-2.38zm-.48 5.05l-8.48 5.25a1.27 1.27 0 01-1.28 0L2.88 7.55A1 1 0 114 5.84l8 5 8-5a1 1 0 111.08 1.71z">
+                  </path>
+                 </svg>
+                </span>
+               </div>
+               Message
+              </div>
+             </a>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="yWFfm">
+          <div data-pub-id="clicked_annonce_saved" data-qa-id="adview_button_favorite_navbar">
+           <div>
+            <div class="_3gC1p">
+             <div class="_2_Cd_">
+              <div class="_2LnD0">
+               <span class="kcRM9 _1bI-U _3Wx6b">
+                <svg data-name="Calque 1" height="1em" viewbox="0 0 24 24" width="1em">
+                 <path d="M21.19 2.24A6.76 6.76 0 0012 3.61a6.76 6.76 0 00-9.19-1.37A6.89 6.89 0 000 7.58c-.16 4.84 4 8.72 10.26 14.66l.12.12a2.32 2.32 0 003.23 0l.13-.12C20 16.29 24.15 12.41 24 7.57a6.89 6.89 0 00-2.81-5.33zm-9.07 18.15l-.12.12-.12-.12C6.17 15 2.4 11.46 2.4 7.86a4.18 4.18 0 014.2-4.37 4.68 4.68 0 014.28 3h2.25a4.66 4.66 0 014.27-3 4.18 4.18 0 014.2 4.37c0 3.6-3.77 7.14-9.48 12.53z">
+                 </path>
+                </svg>
+               </span>
+              </div>
+              Sauvegarder
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="_3IX1b">
+        <div class="_1G5j1">
+         <div class="_1i0e0 _3k28b" data-qa-id="adview_sticky_container">
+          <div class="HBLZ3">
+           <div class="_2Glf1" data-qa-id="adview_sticky_image">
+            <img src="https://img6.leboncoin.fr/ad-thumb/4ddaf4dd8a3fe38ba98cf9b9d72f0d42ad664652.jpg"/>
+           </div>
+           <div data-qa-id="adview_title">
+            <p class="_1hnil _1-TTU _35DXM">
+             Appartement 5 pièces 93 m²
+            </p>
+            <div class="_3HgZV" data-qa-id="adview_price">
+             <div class="dZs3g">
+              <div class="dZs3g">
+               <span class="_3Ce01 _3gP8T _25LNb _35DXM">
+                800 000
+                <!-- -->
+                €
+               </span>
+               <div>
+                <p class="Roh2X _1uydM _1hnil _1-TTU _35DXM">
+                </p>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="_6UM0J">
+           <div class="_1mUIk">
+            <div class="_1xlo6" data-qa-id="adview_button_contact_sticky">
+             <div>
+              <a class="_2qvLx _3WXWV _35pAC _1Vw3w _kC3e _3x0kP _11dBH _PypL sczyl _30q3D _1y_ge _3QJkO">
+               <span class="kcRM9 _1bI-U _21dth _3Wx6b _3k87M">
+                <svg data-name="Calque 1" height="1em" viewbox="0 0 24 24" width="1em">
+                 <path d="M21.6 0H2.4A2.41 2.41 0 000 2.4v14.4a2.41 2.41 0 002.4 2.4h16.8L24 24V2.4A2.41 2.41 0 0021.6 0zM18 14.4h-7.2a1.29 1.29 0 01-1.2-1.2 1.29 1.29 0 011.2-1.2H18a1.29 1.29 0 011.2 1.2 1.29 1.29 0 01-1.2 1.2zm0-3.6H6a1.29 1.29 0 01-1.2-1.2A1.29 1.29 0 016 8.4h12a1.29 1.29 0 011.2 1.2 1.29 1.29 0 01-1.2 1.2zm0-3.6H6A1.29 1.29 0 014.8 6 1.29 1.29 0 016 4.8h12A1.29 1.29 0 0119.2 6 1.29 1.29 0 0118 7.2z">
+                 </path>
+                </svg>
+               </span>
+               Envoyer un message
+              </a>
+             </div>
+            </div>
+            <div class="_1xlo6" data-pub-id="clicknumero" data-qa-id="adview_button_phone">
+             <div>
+              <div>
+               <button class="_2qvLx _3osY2 _35pAC _1Vw3w _kC3e _3x0kP _11dBH _PypL sczyl _30q3D _1y_ge _3QJkO" data-qa-id="adview_button_phone_contact" type="button">
+                <span class="kcRM9 _1bI-U _30L6u _3Wx6b _3k87M">
+                 <svg height="1em" viewbox="0 0 24 24" width="1em">
+                  <path d="M4.72 2.67a16.5 16.5 0 00.6 3.45l-1.6 1.6a19.6 19.6 0 01-1-5h2v-.05zm13.15 16.05c1.13.32 2.289.52 3.46.6v2a20.64 20.64 0 01-5.06-1l1.6-1.59v-.01zM6 0H1.33A1.34 1.34 0 000 1.33C0 13.85 10.15 24 22.67 24A1.34 1.34 0 0024 22.67V18a1.34 1.34 0 00-1.33-1.33 15.26 15.26 0 01-4.76-.76 1.23 1.23 0 00-.42-.07 1.37 1.37 0 00-.94.39l-2.94 2.93a20.19 20.19 0 01-8.78-8.78l2.93-2.93a1.33 1.33 0 00.33-1.36 15.21 15.21 0 01-.76-4.76A1.34 1.34 0 006 0z" fill="#1A1A1A" fill-rule="evenodd">
+                  </path>
+                 </svg>
+                </span>
+                Voir le numéro
+               </button>
+              </div>
+             </div>
+            </div>
+            <div class="_1xlo6">
+             <div data-pub-id="clicked_annonce_saved" data-qa-id="adview_button_favorite_sticky">
+              <div>
+               <div>
+                <button class="_2qvLx _3osY2 _35pAC _1Vw3w _3x0kP _11dBH _PypL sczyl _30q3D _1y_ge _3QJkO" type="button">
+                 <span class="kcRM9 _1bI-U _30L6u _3Wx6b _3k87M">
+                  <svg data-name="Calque 1" height="1em" viewbox="0 0 24 24" width="1em">
+                   <title>
+                    Sauvegarder
+                   </title>
+                   <path d="M21.19 2.24A6.76 6.76 0 0012 3.61a6.76 6.76 0 00-9.19-1.37A6.89 6.89 0 000 7.58c-.16 4.84 4 8.72 10.26 14.66l.12.12a2.32 2.32 0 003.23 0l.13-.12C20 16.29 24.15 12.41 24 7.57a6.89 6.89 0 00-2.81-5.33zm-9.07 18.15l-.12.12-.12-.12C6.17 15 2.4 11.46 2.4 7.86a4.18 4.18 0 014.2-4.37 4.68 4.68 0 014.28 3h2.25a4.66 4.66 0 014.27-3 4.18 4.18 0 014.2 4.37c0 3.6-3.77 7.14-9.48 12.53z">
+                   </path>
+                  </svg>
+                 </span>
+                 Sauvegarder
+                </button>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="_2kzWi">
+        <div class="_39RR5">
+         <div class="MfNe- _1o09v">
+          <div class="_3V9gI" itemscope="" itemtype="https://schema.org/BreadcrumbList">
+           <div class="_3PswX" data-qa-id="breadcrumb-item-0" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+            <a class="_64Mha _2NG-q _1GcfX Dqdzf cJtdT _3j0OU" href="/">
+             Accueil
+            </a>
+            <meta content="1" itemprop="position"/>
+           </div>
+           &gt;
+           <div class="_3PswX" data-qa-id="breadcrumb-item-1" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+            <a class="_64Mha _2NG-q _1GcfX Dqdzf cJtdT _3j0OU" href="/annonces/offres/ile_de_france/paris/">
+             Paris
+            </a>
+            <meta content="2" itemprop="position"/>
+           </div>
+           &gt;
+           <div class="_3PswX" data-qa-id="breadcrumb-item-2" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+            <a class="_64Mha _2NG-q _1GcfX Dqdzf cJtdT _3j0OU" href="/ventes_immobilieres/offres/ile_de_france/paris/">
+             Ventes immobilières
+            </a>
+            <meta content="3" itemprop="position"/>
+           </div>
+           &gt;
+           <div class="_3PswX" data-qa-id="breadcrumb-item-3" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+            <span class="Dqdzf cJtdT _3j0OU">
+             Appartement 5 pièces 93 m²
+            </span>
+            <meta content="4" itemprop="position"/>
+           </div>
+          </div>
+         </div>
+         <div class="_2umqM" id="grid">
+          <div class="CNb8s">
+           <div class="_2l6Au" data-qa-id="adview_spotlight_container">
+            <div data-qa-id="adview_gallery_container">
+             <div class="PLXio" data-qa-id="lightbox_container">
+              <div class="iWqyT">
+              </div>
+              <div class="_21XTN" data-qa-id="lightbox_close">
+               <span class="kcRM9 _2HAhZ _21dth _17wUD _3Wx6b">
+                <svg data-name="Calque 1" height="1em" viewbox="0 0 24 24" width="1em">
+                 <path d="M23.47 20.9l-8.9-8.9 8.9-8.9A1.81 1.81 0 0020.9.55L12 9.43 3.1.53A1.82 1.82 0 00.53 3.1l8.9 8.9-8.9 8.9a1.82 1.82 0 002.57 2.57l8.9-8.9 8.9 8.9a1.82 1.82 0 002.57-2.57z">
+                 </path>
+                </svg>
+               </span>
+              </div>
+              <div class="_1GcSd">
+               <div class="_307p5">
+                <div class="_1cBUB">
+                 <div class="_3SRn-" style="transform:translate3d(0%, 0, 0);-webkit-transform:translate3d(0%, 0, 0)">
+                  <div class="NQ9tJ" data-qa-id="lightbox_item">
+                   <img alt="galerie-lightbox-image-0" src="https://img6.leboncoin.fr/ad-large/4ddaf4dd8a3fe38ba98cf9b9d72f0d42ad664652.jpg"/>
+                  </div>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+             <div class="_2KMQ0">
+              <div class="adYop">
+               <img src="https://img6.leboncoin.fr/ad-large/4ddaf4dd8a3fe38ba98cf9b9d72f0d42ad664652.jpg"/>
+              </div>
+              <div class="bye7Q">
+               <div class="_3o99T pDZ0Z" data-qa-id="slideshow_container">
+                <div class="_3bgJP">
+                 <div class="_29TpC" style="transform:translate3d(0%, 0, 0);-webkit-transform:translate3d(0%, 0, 0)">
+                  <div class="_3rD7V">
+                   <div class="_3evHN">
+                    <div class="_3tQKe" style="background-image:url(https://img6.leboncoin.fr/ad-image/4ddaf4dd8a3fe38ba98cf9b9d72f0d42ad664652.jpg)">
+                    </div>
+                    <div class="_29U3n">
+                     <img alt="image-galerie-0" src="https://img6.leboncoin.fr/ad-image/4ddaf4dd8a3fe38ba98cf9b9d72f0d42ad664652.jpg"/>
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+            <div class="_1exwr" data-qa-id="adview_spotlight_description_container">
+             <h1 class="_3Tuzm _1VBjc HlrAk _3eNLO _2QVPN _3zIi4 _2-a8M _1JYGK _35DXM" data-qa-id="adview_title">
+              Appartement 5 pièces 93 m²
+             </h1>
+             <div class="_1UUiP">
+              <div class="aY9nu" data-qa-id="adview_price">
+               <div class="dZs3g">
+                <div class="dZs3g">
+                 <span class="_3Ce01 _3gP8T _25LNb _35DXM">
+                  800 000
+                  <!-- -->
+                  €
+                 </span>
+                 <div>
+                  <p class="Roh2X _1uydM _1hnil _1-TTU _35DXM">
+                  </p>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+             <div class="_2R_yM _3YnAX" data-pub-id="clicked_annonce_saved_gallery" data-qa-id="adview_button_favorite_summary">
+              <div>
+               <div class="_3C4to">
+                <div class="_1A-AL">
+                 <span class="kcRM9 _1eo84 _3Wx6b">
+                  <svg data-name="Calque 1" height="1em" viewbox="0 0 24 24" width="1em">
+                   <title>
+                    Sauvegarder
+                   </title>
+                   <path d="M21.19 2.24A6.76 6.76 0 0012 3.61a6.76 6.76 0 00-9.19-1.37A6.89 6.89 0 000 7.58c-.16 4.84 4 8.72 10.26 14.66l.12.12a2.32 2.32 0 003.23 0l.13-.12C20 16.29 24.15 12.41 24 7.57a6.89 6.89 0 00-2.81-5.33zm-9.07 18.15l-.12.12-.12-.12C6.17 15 2.4 11.46 2.4 7.86a4.18 4.18 0 014.2-4.37 4.68 4.68 0 014.28 3h2.25a4.66 4.66 0 014.27-3 4.18 4.18 0 014.2 4.37c0 3.6-3.77 7.14-9.48 12.53z">
+                   </path>
+                  </svg>
+                 </span>
+                </div>
+               </div>
+              </div>
+             </div>
+             <div class="_1UUiP">
+              <p class="_3deLe _3x0kP Dqdzf cJtdT _3j0OU" data-qa-id="adview_date">
+               11/04/2020 à 19:27
+              </p>
+             </div>
+            </div>
+           </div>
+           <div class="Q9ISj">
+            <div class="_3JOrc arr9Y _3k87M FUcqi _1_1QY _1qvhT">
+             <div>
+              <div class="apn-vp">
+               <span class="teal-apn" id="vp1-s">
+               </span>
+               <span class="teal-apn" id="vp1-m">
+               </span>
+               <span class="teal-apn" id="vp3-l">
+               </span>
+               <span class="teal-apn" id="vp4-l">
+               </span>
+              </div>
+             </div>
+            </div>
+           </div>
+           <div class="_3JOrc arr9Y _3k87M FUcqi _1_1QY _1qvhT">
+            <div>
+             <div class="apn-blt">
+              <span class="teal-apn" id="bt1-m">
+              </span>
+              <span class="teal-apn" id="bt1-l">
+              </span>
+              <span class="teal-apn" id="bt2-l">
+              </span>
+              <span class="teal-apn" id="bt1-xl">
+              </span>
+              <span class="teal-apn" id="bt2-xl">
+              </span>
+             </div>
+             <div class="apn-blt">
+              <span class="teal-apn" id="bt1-s">
+              </span>
+             </div>
+            </div>
+           </div>
+           <div class="_3JOrc _3k87M FUcqi _1_1QY _1qvhT">
+            <h2 class="Roh2X _3c6yv _25dUs _21rqc _3QJkO _1hnil _1-TTU _35DXM">
+             Critères
+            </h2>
+            <div>
+             <div class="bIqpo" data-qa-id="criteria_container">
+              <div class="cgyUe" data-qa-id="criteria_item_real_estate_type">
+               <div class="_28YUY">
+                <span class="kcRM9 _2HAhZ _3Wx6b">
+                 <svg height="1em" viewbox="0 0 32 32" width="1em">
+                  <g fill="none" fill-rule="evenodd">
+                   <rect fill="#E6EBEF" height="32" rx="16" width="32">
+                   </rect>
+                   <path d="M16.488 7a.51.51 0 01.504.414l.008.09v3.574h4.865V9.5c0-.245.178-.45.41-.492l.09-.008h1.991a.5.5 0 01.492.41l.008.09v1.578h.644a.5.5 0 01.492.41l.008.09V24.5a.5.5 0 01-.41.492L25.5 25h-4.396l.001.516a.483.483 0 01-.3.454l-.077.022-.082.008H14.26a.473.473 0 01-.46-.484V25H6.51a.51.51 0 01-.503-.414L6 24.496V7.504c0-.247.18-.453.42-.496L6.512 7h9.976zm.953 10.146l-3.8 3.665h.62c.225 0 .413.171.452.397l.007.087v3.737h5.466v-3.737c0-.237.163-.435.377-.476l.083-.008h.442l-3.647-3.665zM7 8v16h6.801v-2.22h-1.34c-.392 0-.592-.474-.366-.78l.055-.062 3.842-3.706L16 17V8.007L7 8zm16.856 1.999h-.991v1.58c0 .245-.176.379-.41.421H17v4.259l.139-.132a.441.441 0 01.557-.051l.07.058 4.786 4.811c.3.301.097.834-.317.834h-1.13L21.104 24 25 23.999V12h-.644c-.245 0-.45-.098-.492-.332l-.008-.09V10zM22.5 13a.5.5 0 01.09.992L22.5 14h-3a.5.5 0 01-.09-.992L19.5 13h3zm-12-1a.5.5 0 01.09.992L10.5 13h-2a.5.5 0 01-.09-.992L8.5 12h2zm4 0a.5.5 0 01.09.992L14.5 13h-2a.5.5 0 01-.09-.992L12.5 12h2zm-4-2a.5.5 0 01.09.992L10.5 11h-2a.5.5 0 01-.09-.992L8.5 10h2zm4 0a.5.5 0 01.09.992L14.5 11h-2a.5.5 0 01-.09-.992L12.5 10h2z" fill="#1A1A1A">
+                   </path>
+                  </g>
+                 </svg>
+                </span>
+               </div>
+               <div>
+                <p class="_2k43C _1pHkp _137P- P4PEa _3j0OU">
+                 Type de bien
+                </p>
+                <p class="_3eNLO _137P- P4PEa _35DXM">
+                 Appartement
+                </p>
+               </div>
+              </div>
+              <div class="cgyUe" data-qa-id="criteria_item_square">
+               <div class="_28YUY">
+                <span class="kcRM9 _2HAhZ _3Wx6b">
+                 <svg height="1em" viewbox="0 0 32 32" width="1em">
+                  <g fill="none" fill-rule="evenodd">
+                   <rect fill="#E6EBEF" height="32" rx="16" width="32">
+                   </rect>
+                   <path d="M24.526 7c.262 0 .474.212.474.474v17.052a.474.474 0 01-.474.474H7.474A.474.474 0 017 24.526V7.474C7 7.212 7.212 7 7.474 7zM24 8H8v16h16V8zM11.099 21.804l.04.048a.52.52 0 01-.075-.103l-.015-.029a.542.542 0 01-.022-.056l-.007-.022a.643.643 0 01-.013-.06c0-.01-.002-.018-.003-.026l-.001-.024v-.052l.001-.02.003-.024a.663.663 0 01.013-.061l.007-.022c.006-.02.014-.038.022-.056l.015-.029.027-.045.008-.01.019-.024.02-.024.011-.008.01-.012 1.453-1.374a.5.5 0 01.747.659l-.06.068-.533.502H21v-8.245l-.51.542a.502.502 0 01-.783-.617l.056-.07 1.374-1.454.02-.02.025-.021-.013.01.012-.009.023-.02.01-.007-.005.004.05-.032.03-.014a.371.371 0 01.055-.022l.023-.007c.02-.005.04-.01.06-.013.009 0 .017-.002.025-.003L21.5 11h.029l.019.002.025.003c.02.003.04.008.06.013l.023.007a.433.433 0 01.056.022l.028.014.045.028.01.008.024.018.025.022.008.01.011.01 1.374 1.453a.498.498 0 01-.659.746l-.067-.06-.511-.54V21.5a.5.5 0 01-.41.492L21.5 22h-8.751l.55.52a.5.5 0 01-.616.782l-.071-.056-1.453-1.374-.02-.02-.044-.054.002.004.021.025-.02-.023z" fill="#1A1A1A">
+                   </path>
+                  </g>
+                 </svg>
+                </span>
+               </div>
+               <div>
+                <p class="_2k43C _1pHkp _137P- P4PEa _3j0OU">
+                 Surface
+                </p>
+                <p class="_3eNLO _137P- P4PEa _35DXM">
+                 93 m²
+                </p>
+               </div>
+              </div>
+              <div class="cgyUe" data-qa-id="criteria_item_rooms">
+               <div class="_28YUY">
+                <span class="kcRM9 _2HAhZ _3Wx6b">
+                 <svg height="1em" viewbox="0 0 32 32" width="1em">
+                  <g fill="none" fill-rule="evenodd">
+                   <rect fill="#E6EBEF" height="32" rx="16" width="32">
+                   </rect>
+                   <path d="M7.474 25A.474.474 0 017 24.526V7.474C7 7.212 7.212 7 7.474 7h17.052c.262 0 .474.212.474.474v17.052a.474.474 0 01-.474.474zM24 8l-11-.001V12h1.5a.5.5 0 01.09.992L14.5 13H13v.5a.5.5 0 01-.992.09L12 13.5V7.999L8 8l-.001 9H14.5a.5.5 0 01.09.992L14.5 18H7.999L8 24l4-.001V22.5a.5.5 0 01.992-.09l.008.09v1.499L24 24l-.001-6H17.5a.5.5 0 01-.09-.992L17.5 17h6.499v-3H17.5a.5.5 0 01-.09-.992L17.5 13h6.499L24 8z" fill="#1A1A1A">
+                   </path>
+                  </g>
+                 </svg>
+                </span>
+               </div>
+               <div>
+                <p class="_2k43C _1pHkp _137P- P4PEa _3j0OU">
+                 Pièces
+                </p>
+                <p class="_3eNLO _137P- P4PEa _35DXM">
+                 5
+                </p>
+               </div>
+              </div>
+              <div class="cgyUe" data-qa-id="criteria_item_energy_rate">
+               <div class="_28YUY">
+                <span class="kcRM9 _2HAhZ _3Wx6b">
+                 <svg height="1em" viewbox="0 0 32 32" width="1em">
+                  <g fill="none" fill-rule="evenodd">
+                   <rect fill="#E6EBEF" height="32" rx="16" width="32">
+                   </rect>
+                   <path d="M23.714 21c.117 0 .231.04.321.116l1.787 1.481a.49.49 0 01.006.751L24.04 24.88a.5.5 0 01-.327.121H8.5a.497.497 0 01-.5-.494v-3.012c0-.273.224-.494.5-.494zm-.182.988H9v2.024h14.526l1.204-1.03-1.198-.994zM21.714 16c.117 0 .231.04.321.116l1.787 1.481a.49.49 0 01.006.751L22.04 19.88a.5.5 0 01-.327.121H8.5a.497.497 0 01-.5-.494v-3.012c0-.273.224-.494.5-.494zm-.182.988H9v2.024h12.526l1.204-1.03-1.198-.994zM19.714 11c.117 0 .231.04.321.116l1.787 1.481a.49.49 0 01.006.751L20.04 14.88a.5.5 0 01-.327.121H8.5a.497.497 0 01-.5-.494v-3.012c0-.273.224-.494.5-.494zm-.182.988H9v2.024h10.526l1.204-1.03-1.198-.994zM18.003 6c.123 0 .241.049.33.136l1.517 1.481c.198.193.2.515.006.71L18.34 9.86a.475.475 0 01-.336.141H8.48A.489.489 0 018 9.506V6.494C8 6.22 8.215 6 8.48 6zm-.192.988H8.96v2.024h8.846l1.022-1.032-1.017-.992z" fill="#1A1A1A">
+                   </path>
+                  </g>
+                 </svg>
+                </span>
+               </div>
+               <div>
+                <div class="_2k43C _1pHkp _21rqc _3QJkO _137P- P4PEa _3j0OU">
+                 Classe énergie
+                 <div class="_10dkE">
+                  <span class="kcRM9 _1l5Un _3Wx6b">
+                   <svg data-name="Calque 1" height="1em" viewbox="0 0 24 24" width="1em">
+                    <title>
+                     En savoir plus
+                    </title>
+                    <path d="M12 0a12 12 0 1012 12A12 12 0 0012 0zm1.2 16.8A1.29 1.29 0 0112 18a1.29 1.29 0 01-1.2-1.2V12a1.29 1.29 0 011.2-1.2 1.29 1.29 0 011.2 1.2zm-.6-7.44a1.33 1.33 0 01-1.68-.48 1.33 1.33 0 01.48-1.68 1.24 1.24 0 111.2 2.16z">
+                    </path>
+                   </svg>
+                  </span>
+                 </div>
+                </div>
+                <div class="_2g8Em _3s_MA">
+                 <div class="_1j0Lr _3EvLd">
+                  A
+                 </div>
+                 <div class="_1j0Lr mlj32">
+                  B
+                 </div>
+                 <div class="_1j0Lr _2KJo2">
+                  C
+                 </div>
+                 <div class="_1j0Lr _1XNVj _3uS-m">
+                  D
+                 </div>
+                 <div class="_1j0Lr UUPUf">
+                  E
+                 </div>
+                 <div class="_1j0Lr _2EJTq">
+                  F
+                 </div>
+                 <div class="_1j0Lr ltezo">
+                  G
+                 </div>
+                </div>
+               </div>
+              </div>
+              <div class="cgyUe" data-qa-id="criteria_item_ges">
+               <div class="_28YUY">
+                <span class="kcRM9 _2HAhZ _3Wx6b">
+                 <svg height="1em" viewbox="0 0 32 32" width="1em">
+                  <g fill="none" fill-rule="evenodd">
+                   <rect fill="#E6EBEF" height="32" rx="16" width="32">
+                   </rect>
+                   <path d="M24.5 21a.5.5 0 01.5.5v3a.5.5 0 01-.5.5h-16a.5.5 0 01-.5-.5v-3a.5.5 0 01.5-.5zm-.5 1H9v2h15v-2zm-1.5-6a.5.5 0 01.5.5v3a.5.5 0 01-.5.5h-14a.5.5 0 01-.5-.5v-3a.5.5 0 01.5-.5zm-.5 1H9v2h13v-2zm-1.5-6a.5.5 0 01.5.5v3a.5.5 0 01-.5.5h-12a.5.5 0 01-.5-.5v-3a.5.5 0 01.5-.5zm-.5 1H9v2h11v-2zm-1.5-6a.5.5 0 01.5.5v3a.5.5 0 01-.5.5h-10a.5.5 0 01-.5-.5v-3a.5.5 0 01.5-.5zM18 7H9v2h9V7z" fill="#1A1A1A">
+                   </path>
+                  </g>
+                 </svg>
+                </span>
+               </div>
+               <div>
+                <div class="_2k43C _1pHkp _21rqc _3QJkO _137P- P4PEa _3j0OU">
+                 GES
+                 <div class="_10dkE">
+                  <span class="kcRM9 _1l5Un _3Wx6b">
+                   <svg data-name="Calque 1" height="1em" viewbox="0 0 24 24" width="1em">
+                    <title>
+                     En savoir plus
+                    </title>
+                    <path d="M12 0a12 12 0 1012 12A12 12 0 0012 0zm1.2 16.8A1.29 1.29 0 0112 18a1.29 1.29 0 01-1.2-1.2V12a1.29 1.29 0 011.2-1.2 1.29 1.29 0 011.2 1.2zm-.6-7.44a1.33 1.33 0 01-1.68-.48 1.33 1.33 0 01.48-1.68 1.24 1.24 0 111.2 2.16z">
+                    </path>
+                   </svg>
+                  </span>
+                 </div>
+                </div>
+                <div class="_2g8Em _3lHoo">
+                 <div class="_1j0Lr _3EvLd">
+                  A
+                 </div>
+                 <div class="_1j0Lr mlj32">
+                  B
+                 </div>
+                 <div class="_1j0Lr _2KJo2">
+                  C
+                 </div>
+                 <div class="_1j0Lr _1XNVj">
+                  D
+                 </div>
+                 <div class="_1j0Lr UUPUf _3uS-m">
+                  E
+                 </div>
+                 <div class="_1j0Lr _2EJTq">
+                  F
+                 </div>
+                 <div class="_1j0Lr ltezo">
+                  G
+                 </div>
+                </div>
+               </div>
+              </div>
+              <div class="cgyUe" data-qa-id="criteria_item_custom_ref">
+               <div class="_28YUY">
+                <span class="kcRM9 _2HAhZ _3Wx6b">
+                 <svg height="1em" viewbox="0 0 32 32" width="1em">
+                  <g fill="none" fill-rule="evenodd">
+                   <rect fill="#E6EBEF" height="32" rx="16" width="32">
+                   </rect>
+                   <path d="M23.483 6c.254 0 .465.176.509.409l.008.09V25.5a.504.504 0 01-.424.491l-.093.008H8.517a.512.512 0 01-.509-.409L8 25.501V9.984a.48.48 0 01.072-.253l.053-.072 3.113-3.486a.525.525 0 01.303-.166L11.63 6h11.853zM23 6.997H11.988l-.034 3.006c0 .296.046.997-.41.989l-.09.008H9v14.003h14V6.997zM20.5 22a.5.5 0 01.09.992L20.5 23h-2a.5.5 0 01-.09-.992L18.5 22h2zm-4-5a.5.5 0 01.09.992L16.5 18h-5a.5.5 0 01-.09-.992L11.5 17h5zm3-2a.5.5 0 01.09.992L19.5 16h-8a.5.5 0 01-.09-.992L11.5 15h8zM11 7.928L9 10v.003h2V7.928zM20.5 8a.5.5 0 01.09.992L20.5 9h-5a.5.5 0 01-.09-.992L15.5 8h5z" fill="#1A1A1A">
+                   </path>
+                  </g>
+                 </svg>
+                </span>
+               </div>
+               <div>
+                <p class="_2k43C _1pHkp _137P- P4PEa _3j0OU">
+                 Référence
+                </p>
+                <p class="_3eNLO _137P- P4PEa _35DXM">
+                 717017
+                </p>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+           <div class="_3JOrc _3k87M FUcqi _1_1QY _1qvhT">
+            <h2 class="Roh2X _3c6yv _25dUs _21rqc _3QJkO _1hnil _1-TTU _35DXM">
+             Description
+            </h2>
+            <div>
+             <div class="_2dK8x" data-qa-id="adview_description_container">
+              <div>
+               <span class="_1fFkI">
+                Vente Appartement 5 pièces
+                <br/>
+                <br/>
+                iad France - Laurence BISSON (07 72 43 18 64) vous propose : JE RESTE JOIGNABLE PENDANT LE CONFINEMENT. Paris 12.  A moins d'une minute du métro Dugommier et des commerces, lumineux appartement traversant de 5 pièces d'une superficie de 92 m² environ, comprenant une entrée, un spacieux séjour, quatre chambres, une cuisine américaine, une salle d'eau  et des wc séparés.
+                <br/>
+                Très calme dans une copropriété très bien entretenue.
+                <br/>
+                Une cave complète ce bien.
+                <br/>
+                Très beaux volumes, double vitrage. A visiter rapidement !
+                <br/>
+                <br/>
+                La présente annonce immobilière vise 1 lot principal situé dans une copropriété formant 40 lots au total ne faisant l'objet d'aucune procédure en cours et d'un montant de charges d'environ 338 € par mois (soit 4056 € annuel) déclaré par le vendeur.Honoraires d'agence à la charge du vendeur.Information d'affichage énergétique sur ce bien : DPE D indice 189 et GES E indice 44. La présente annonce immobilière a été rédigée sous la responsabilité éditoriale de Mme Laurence BISSON (ID 28744), Agent Commercial mandataire en immobilier immatriculé au Registre Spécial des Agents Commerciaux (RSAC) du Tribunal de Commerce de CRETEIL sous le numéro 838834836.
+                <br/>
+                Référence annonce : 717017
+                <br/>
+                Les honoraires sont à la charge du vendeur
+                <br/>
+                <br/>
+                A propos de la copropriété :
+                <br/>
+                Pas de procédure en cours
+                <br/>
+                Nombre de lots : 76
+                <br/>
+                Charges prévisionnelles annuelles : 4056 €
+               </span>
+              </div>
+             </div>
+            </div>
+           </div>
+           <div class="_3JOrc _3k87M FUcqi _1_1QY _1qvhT">
+            <h2 class="Roh2X _3c6yv _25dUs _21rqc _3QJkO _1hnil _1-TTU _35DXM">
+             <span class="kcRM9 _1l5Un _3Wx6b _3k87M">
+              <svg data-name="Calque 1" height="1em" viewbox="0 0 24 24" width="1em">
+               <path d="M12 0a8.81 8.81 0 00-9 8.63c0 5.14 5.68 12.23 8 14.93a1.32 1.32 0 002 0c2.33-2.7 8-9.79 8-14.93A8.81 8.81 0 0012 0zm0 11.71a3.15 3.15 0 01-3.21-3.08A3.15 3.15 0 0112 5.55a3.15 3.15 0 013.21 3.08A3.15 3.15 0 0112 11.71z">
+               </path>
+              </svg>
+             </span>
+             Paris
+             <span class="_1uydM _1hnil _1-TTU _3j0OU">
+              (
+              <!-- -->
+              75012
+              <!-- -->
+              )
+             </span>
+            </h2>
+            <div>
+             <div class="_2epNi" data-qa-id="adview_location_container">
+              <div class="LazyLoad">
+              </div>
+             </div>
+            </div>
+           </div>
+           <div class="apn-pv">
+            <span class="teal-apn" id="avr-s">
+            </span>
+           </div>
+           <div class="_3JOrc arr9Y _3XinI WaP_Z _3k87M FUcqi">
+            <div>
+             <a class="_64Mha _2NG-q HGqCc _3c6yv _21rqc _137P- P4PEa _35DXM" data-qa-id="adview_description_link_report" href="https://www.leboncoin.fr/support/form/0?id=1&amp;subject=15&amp;ad=1725558214">
+              <span class="kcRM9 _1l5Un _30L6u _3Wx6b _3k87M">
+               <svg height="1em" viewbox="0 0 24 24" width="1em">
+                <path d="M18.926 10H4V2h14.886l-2.667 3.25c-.292.365-.292.984 0 1.35l2.707 3.4zM18.2 6l3.58-4.375a1 1 0 00-.155-1.406.981.981 0 00-.493-.193L21.2 0H2.8c-.394 0-.705.361-.772.828C2.022.873 2 .913 2 .96v22.08c0 .53.447.96 1 .96.553 0 1-.43 1-.96V12h17a1 1 0 00.781-1.625L18.2 6z" fill="#1A1A1A" fill-rule="evenodd">
+                </path>
+               </svg>
+              </span>
+              Signaler l'annonce
+             </a>
+            </div>
+           </div>
+           <div class="_3JOrc arr9Y _3XinI WaP_Z _3k87M FUcqi">
+            <div>
+             <div class="_1AMYC">
+              <div class="_1bS4H">
+               <div class="Q9ISj">
+                <div>
+                 <div class="_1ONQ3" data-qa-id="adview_share_copy">
+                  <span class="kcRM9 _1bI-U _3Wx6b _3k87M">
+                   <svg data-name="Calque 1" height="1em" viewbox="0 0 24 24" width="1em">
+                    <path d="M7.2 12a1.2 1.2 0 001.2 1.2h7.2a1.2 1.2 0 100-2.4H8.4A1.2 1.2 0 007.2 12z">
+                    </path>
+                    <path d="M9.6 15.6H6a3.6 3.6 0 010-7.2h3.6a1.2 1.2 0 100-2.4H6a6 6 0 000 12h3.6a1.2 1.2 0 000-2.4zM18 6h-3.6a1.2 1.2 0 000 2.4H18a3.6 3.6 0 110 7.2h-3.6a1.2 1.2 0 000 2.4H18a6 6 0 000-12z">
+                    </path>
+                   </svg>
+                  </span>
+                  <span class="CcHSw Dqdzf cJtdT _35DXM">
+                   Copier le lien
+                  </span>
+                 </div>
+                </div>
+               </div>
+               <div class="_1o09v">
+                <div class="_1ONQ3" data-qa-id="adview_share_print">
+                 <span class="kcRM9 _1bI-U _3Wx6b _3k87M">
+                  <svg data-name="Calque 1" height="1em" viewbox="0 0 24 24" width="1em">
+                   <path d="M20.4 7.11H3.6A3.63 3.63 0 000 10.78v4.89a2.43 2.43 0 002.4 2.44h2.4v2.45A2.43 2.43 0 007.2 23h9.6a2.43 2.43 0 002.4-2.44v-2.45h2.4a2.43 2.43 0 002.4-2.44v-4.89a3.63 3.63 0 00-3.6-3.67zm-3.6 12.22a1.22 1.22 0 01-1.2 1.23H8.4a1.22 1.22 0 01-1.2-1.23v-4.89h9.6zM20.4 12a1.22 1.22 0 111.2-1.22A1.21 1.21 0 0120.4 12zM6 5.89h12a1.21 1.21 0 001.2-1.22V2.22A1.21 1.21 0 0018 1H6a1.21 1.21 0 00-1.2 1.22v2.45A1.21 1.21 0 006 5.89z">
+                   </path>
+                  </svg>
+                 </span>
+                 <span class="CcHSw Dqdzf cJtdT _35DXM">
+                  Imprimer
+                 </span>
+                </div>
+               </div>
+               <div class="_24INS _9dEbO">
+               </div>
+               <div class="_1ONQ3" data-qa-id="adview_share_email">
+                <span class="kcRM9 _1bI-U _3Wx6b _3k87M">
+                 <svg data-name="Calque 1" height="1em" viewbox="0 0 24 24" width="1em">
+                  <path d="M21.6 2.5H2.4A2.39 2.39 0 000 4.88v14.24a2.4 2.4 0 002.4 2.38h19.2a2.4 2.4 0 002.4-2.38V4.88a2.4 2.4 0 00-2.4-2.38zm-.48 5.05l-8.48 5.25a1.27 1.27 0 01-1.28 0L2.88 7.55A1 1 0 114 5.84l8 5 8-5a1 1 0 111.08 1.71z">
+                  </path>
+                 </svg>
+                </span>
+                <span class="CcHSw Dqdzf cJtdT _35DXM">
+                 Partager par mail
+                </span>
+                <div class="_24INS _9dEbO">
+                </div>
+               </div>
+               <div class="_1ONQ3 _6UM0J">
+                <a class="_27ngl CcHSw kTOAf _3Q3XS _21rqc _3QJkO Dqdzf cJtdT _35DXM" data-qa-id="adview_share_pro_rates_link" href="https://bareme.iadfrance.fr/detail/28744" rel="noopener noreferrer" target="_blank">
+                 <span class="kcRM9 _1bI-U _3Wx6b _3k87M">
+                  <svg data-name="Calque 1" height="1em" viewbox="0 0 24 24" width="1em">
+                   <path d="M16.34 5.69h-1.15V3.62a.67.67 0 00-.67-.62H12.9V.89a.68.68 0 00-.68-.69h-.46a.69.69 0 00-.69.69V3H9.46a.68.68 0 00-.68.67v2.02H7.64a.69.69 0 00-.64.69V24.2h10V6.38a.68.68 0 00-.66-.69zM14.83 20H9.14a.57.57 0 010-1.14h5.69a.57.57 0 110 1.14zm0-2.75H9.14a.57.57 0 010-1.13h5.69a.57.57 0 110 1.13zm0-2.74H9.14a.56.56 0 01-.56-.57.57.57 0 01.56-.57h5.69a.57.57 0 01.57.57.56.56 0 01-.57.55zm0-2.74H9.14a.57.57 0 01-.56-.57.56.56 0 01.56-.57h5.69a.56.56 0 01.57.57.57.57 0 01-.57.55zm0-2.75H9.14a.57.57 0 010-1.13h5.69a.57.57 0 110 1.13zM5.36 9.53H3.94v-1.1a.68.68 0 00-.69-.68h-.46a.67.67 0 00-.68.68v1.1H.69a.69.69 0 00-.69.69v13.3a.69.69 0 00.69.68h4.67a.69.69 0 00.64-.68v-13.3a.69.69 0 00-.64-.69zM23.31 9.53h-1.42v-1.1a.67.67 0 00-.68-.68h-.46a.68.68 0 00-.69.68v1.1h-1.42a.69.69 0 00-.68.69v13.3a.69.69 0 00.68.68h4.67a.69.69 0 00.69-.68v-13.3a.69.69 0 00-.69-.69z">
+                   </path>
+                  </svg>
+                 </span>
+                 Voir les tarifs du professionnel
+                </a>
+               </div>
+              </div>
+              <div class="_3d7aZ y7uUX">
+               <a class="_27ngl CcHSw kTOAf _3Q3XS _21rqc _3QJkO Dqdzf cJtdT _35DXM" data-qa-id="adview_share_pro_rates_link" href="https://bareme.iadfrance.fr/detail/28744" rel="noopener noreferrer" target="_blank">
+                <span class="kcRM9 _1bI-U _3Wx6b _3k87M">
+                 <svg data-name="Calque 1" height="1em" viewbox="0 0 24 24" width="1em">
+                  <path d="M16.34 5.69h-1.15V3.62a.67.67 0 00-.67-.62H12.9V.89a.68.68 0 00-.68-.69h-.46a.69.69 0 00-.69.69V3H9.46a.68.68 0 00-.68.67v2.02H7.64a.69.69 0 00-.64.69V24.2h10V6.38a.68.68 0 00-.66-.69zM14.83 20H9.14a.57.57 0 010-1.14h5.69a.57.57 0 110 1.14zm0-2.75H9.14a.57.57 0 010-1.13h5.69a.57.57 0 110 1.13zm0-2.74H9.14a.56.56 0 01-.56-.57.57.57 0 01.56-.57h5.69a.57.57 0 01.57.57.56.56 0 01-.57.55zm0-2.74H9.14a.57.57 0 01-.56-.57.56.56 0 01.56-.57h5.69a.56.56 0 01.57.57.57.57 0 01-.57.55zm0-2.75H9.14a.57.57 0 010-1.13h5.69a.57.57 0 110 1.13zM5.36 9.53H3.94v-1.1a.68.68 0 00-.69-.68h-.46a.67.67 0 00-.68.68v1.1H.69a.69.69 0 00-.69.69v13.3a.69.69 0 00.69.68h4.67a.69.69 0 00.64-.68v-13.3a.69.69 0 00-.64-.69zM23.31 9.53h-1.42v-1.1a.67.67 0 00-.68-.68h-.46a.68.68 0 00-.69.68v1.1h-1.42a.69.69 0 00-.68.69v13.3a.69.69 0 00.68.68h4.67a.69.69 0 00.69-.68v-13.3a.69.69 0 00-.69-.69z">
+                  </path>
+                 </svg>
+                </span>
+                Voir les tarifs du professionnel
+               </a>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="_22c_T">
+           <div class="_3JOrc arr9Y _3k87M FUcqi _1_1QY _1qvhT">
+            <div>
+             <div class="sB0AW advertisingFooterM y7uUX">
+              <div class="_19-g-">
+               <div class="teal-apn-lta-pv-container">
+                <div class="googleafs">
+                 <div class="advertisingFooter">
+                  <div class="js-googleAds google afs" id="google_ads">
+                   <div id="afs-main">
+                    <div id="afs-attribution">
+                     <a href="http://services.google.com/feedback/online_hws_feedback" rel="noopener noreferrer" target="_blank">
+                      Annonces Google
+                     </a>
+                    </div>
+                    <div>
+                     <div id="afshcontainer1">
+                     </div>
+                     <div class="apn-afs" id="google_adview-xl">
+                      <div id="afscontainer1-xl">
+                      </div>
+                     </div>
+                     <div class="apn-afs" id="google_adview-l">
+                      <div id="afscontainer1-l">
+                      </div>
+                     </div>
+                     <div class="apn-afs" id="google_adview-m">
+                      <div id="afscontainer1-m">
+                      </div>
+                     </div>
+                     <div class="apn-afs" id="google_adview-s">
+                      <div id="afscontainer1-s">
+                      </div>
+                     </div>
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+                </div>
+               </div>
+              </div>
+              <div class="_2AWE-">
+               <div class="apn-pv">
+                <span class="teal-apn" id="avr-m">
+                </span>
+                <span class="teal-apn" id="avr2-l">
+                </span>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="_1OY_7" id="aside">
+           <div class="_2KUN6">
+            <div class="RMz-l _2AAuw">
+             <div>
+              <div data-qa-id="adview_contact_container">
+               <div class="_3QOal">
+                <div class="">
+                 <div class="H9wtj" data-qa-id="adview_button_contact_contact">
+                  <div>
+                   <a class="_2qvLx _3WXWV _35pAC _1Vw3w _kC3e _3x0kP _11dBH _PypL sczyl _30q3D _1y_ge _3QJkO">
+                    <span class="kcRM9 _1bI-U _21dth _3Wx6b _3k87M">
+                     <svg data-name="Calque 1" height="1em" viewbox="0 0 24 24" width="1em">
+                      <path d="M21.6 0H2.4A2.41 2.41 0 000 2.4v14.4a2.41 2.41 0 002.4 2.4h16.8L24 24V2.4A2.41 2.41 0 0021.6 0zM18 14.4h-7.2a1.29 1.29 0 01-1.2-1.2 1.29 1.29 0 011.2-1.2H18a1.29 1.29 0 011.2 1.2 1.29 1.29 0 01-1.2 1.2zm0-3.6H6a1.29 1.29 0 01-1.2-1.2A1.29 1.29 0 016 8.4h12a1.29 1.29 0 011.2 1.2 1.29 1.29 0 01-1.2 1.2zm0-3.6H6A1.29 1.29 0 014.8 6 1.29 1.29 0 016 4.8h12A1.29 1.29 0 0119.2 6 1.29 1.29 0 0118 7.2z">
+                      </path>
+                     </svg>
+                    </span>
+                    Envoyer un message
+                   </a>
+                  </div>
+                 </div>
+                 <div class="H9wtj" data-pub-id="clicknumero">
+                  <div>
+                   <div>
+                    <button class="_2qvLx _3osY2 _35pAC _1Vw3w _kC3e _3x0kP _11dBH _PypL sczyl _30q3D _1y_ge _3QJkO" data-qa-id="adview_button_phone_contact" type="button">
+                     <span class="kcRM9 _1bI-U _30L6u _3Wx6b _3k87M">
+                      <svg height="1em" viewbox="0 0 24 24" width="1em">
+                       <path d="M4.72 2.67a16.5 16.5 0 00.6 3.45l-1.6 1.6a19.6 19.6 0 01-1-5h2v-.05zm13.15 16.05c1.13.32 2.289.52 3.46.6v2a20.64 20.64 0 01-5.06-1l1.6-1.59v-.01zM6 0H1.33A1.34 1.34 0 000 1.33C0 13.85 10.15 24 22.67 24A1.34 1.34 0 0024 22.67V18a1.34 1.34 0 00-1.33-1.33 15.26 15.26 0 01-4.76-.76 1.23 1.23 0 00-.42-.07 1.37 1.37 0 00-.94.39l-2.94 2.93a20.19 20.19 0 01-8.78-8.78l2.93-2.93a1.33 1.33 0 00.33-1.36 15.21 15.21 0 01-.76-4.76A1.34 1.34 0 006 0z" fill="#1A1A1A" fill-rule="evenodd">
+                       </path>
+                      </svg>
+                     </span>
+                     Voir le numéro
+                    </button>
+                   </div>
+                  </div>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+            <div class="_1o09v">
+             <div class="_3JOrc arr9Y _3k87M FUcqi _1_1QY _1qvhT">
+              <div>
+               <div class="apn-vp">
+                <span class="teal-apn" id="vp1-l">
+                </span>
+                <span class="teal-apn" id="vp2-l">
+                </span>
+                <span class="teal-apn" id="vp1-xl">
+                </span>
+                <span class="teal-apn" id="vp2-xl">
+                </span>
+               </div>
+               <div class="advertisingSkyscraper">
+                <div class="initPosition">
+                 <div class="_3GkIC">
+                  <div class="apn-pv">
+                   <span class="teal-apn" id="avr1-l">
+                   </span>
+                   <span class="teal-apn" id="avr-xl">
+                   </span>
+                  </div>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <footer class="_2TcK4">
+        <div class="_2cF5E">
+         <div class="_1o09v">
+          <div class="_9cgJE">
+           <div class="_3WCKP">
+            <ul class="_3WCKP">
+             <li class="_1qFBk">
+              à propos du boncoin
+             </li>
+             <li class="_3TyPP">
+              <a href="https://leboncoingroupe.com/" rel="noopener noreferrer" target="_blank" title="Qui sommes-nous ?">
+               Qui sommes-nous ?
+              </a>
+             </li>
+             <li class="_3TyPP">
+              <a href="https://www.leboncoin.fr/recrutement.htm" title="Nous rejoindre">
+               Nous rejoindre
+              </a>
+             </li>
+             <li class="_3TyPP">
+              <a href="https://leboncoingroupe.com/wp-content/uploads/2020/02/La-RSE-chez-leboncoin.pdf" rel="noopener noreferrer" target="_blank" title="Acteur responsable de l’économie française">
+               Acteur responsable de l’économie française
+              </a>
+             </li>
+            </ul>
+            <ul class="_3WCKP">
+             <li class="_1qFBk">
+              Nos applications
+             </li>
+             <li class="_3TyPP">
+              <div class="HSQRj">
+               <a class="_3WeLY" href="https://itunes.apple.com/fr/app/leboncoin/id484115113" rel="nofollow noopener noreferrer" target="_blank" title="Télécharger l’application iOS">
+                <div class="LazyLoad">
+                </div>
+               </a>
+               <a class="_3WeLY" href="https://play.google.com/store/apps/details?id=fr.leboncoin" rel="nofollow noopener noreferrer" target="_blank" title="Télécharger l’application Android">
+                <div class="LazyLoad">
+                </div>
+               </a>
+              </div>
+             </li>
+            </ul>
+           </div>
+           <ul class="_3WCKP">
+            <li class="_1qFBk">
+             Informations légales
+            </li>
+            <li class="_3TyPP">
+             <a href="/dc/cgu" rel="nofollow" title="Conditions générales d’utilisation">
+              Conditions générales d’utilisation
+             </a>
+            </li>
+            <li class="_3TyPP">
+             <a href="/dc/rules" rel="nofollow" title="Règles de diffusion, de référencement et de déréférencement">
+              Règles de diffusion, de référencement et de déréférencement
+             </a>
+            </li>
+            <li class="_3TyPP">
+             <a href="https://www.leboncoin.fr/dc/cgv/" rel="nofollow" title="Conditions générales de vente">
+              Conditions Générales de Vente
+             </a>
+            </li>
+            <li class="_3TyPP">
+             <a href="/dc/cookies" rel="nofollow" title="Vie privée / cookies">
+              Vie privée / cookies
+             </a>
+            </li>
+            <li class="_3TyPP">
+             <a href="/dc/vos_droits_et_obligations" rel="nofollow" title="Vos droits et obligations">
+              Vos droits et obligations
+             </a>
+            </li>
+            <li class="_3TyPP">
+             <a href="/dc/rules" rel="nofollow" title="Critères de classement">
+              Critères de classement
+             </a>
+            </li>
+           </ul>
+           <ul class="_3WCKP">
+            <li class="_1qFBk">
+             Nos solutions pros
+            </li>
+            <li class="_3TyPP">
+             <a data-qa-id="footer_pub_link" href="/pub" title="Publicité">
+              Publicité
+             </a>
+            </li>
+            <li class="_3TyPP">
+             <a data-qa-id="footer_real_estate_link" href="/solutions-immo/" title="Professionnels de l’immobilier">
+              Professionnels de l’immobilier
+             </a>
+            </li>
+            <li class="_3TyPP">
+             <a data-qa-id="footer_recruitment_link" href="/solutions-emploi/" title="Vos recrutements">
+              Vos recrutements
+             </a>
+            </li>
+            <li class="_3TyPP">
+             <a data-qa-id="footer_auto_link" href="/solutions-auto/" title="Professionnels de l'auto">
+              Professionnels de l’auto
+             </a>
+            </li>
+            <li class="_3TyPP">
+             <a data-qa-id="footer_multicat_link" href="/solutions-pros/" title="Autres solutions professionnelles">
+              Autres solutions professionnelles
+             </a>
+            </li>
+            <li class="_3TyPP">
+             <a data-qa-id="footer_pro_phonebook_link" href="https://www.leboncoin.fr/boutiques/tout_secteur_d_activite/toutes_categories/" title="Annuaire des professionnels">
+              Annuaire des professionnels
+             </a>
+            </li>
+           </ul>
+           <div class="_3WCKP">
+            <ul class="_3WCKP">
+             <li class="_1qFBk">
+              Des questions ?
+             </li>
+             <li class="_3TyPP">
+              <a href="https://assistance.leboncoin.info/hc/fr" title="Aide">
+               Aide
+              </a>
+             </li>
+             <li class="_3TyPP">
+              <a href="/paiement-securise-livraison" title="Le service de paiement sécurisé et la livraison">
+               Le service de paiement sécurisé et la livraison
+              </a>
+             </li>
+             <li class="_3TyPP">
+              <a href="http://bit.ly/2tr1xYR" title="Demandez conseil à la communauté">
+               Demandez conseil à la Communauté
+              </a>
+             </li>
+            </ul>
+            <ul class="_3WCKP">
+             <li class="_1qFBk">
+              Vous êtes à l’étranger ?
+             </li>
+             <li class="_3TyPP">
+              <div class="_169dp">
+               <div class="_2XLzw _3Hrjq">
+                <div class="_2Gf3M">
+                 <span class="kcRM9 _1bI-U _3Wx6b _3k87M">
+                  <svg height="1em" viewbox="0 0 512 336" width="1em">
+                   <g fill="none" fill-rule="nonzero">
+                    <path d="M170.667 335.724H8.828A8.829 8.829 0 010 326.896V9.103A8.829 8.829 0 018.828.275h161.839v335.449z" fill="#41479B">
+                    </path>
+                    <path d="M170.67.276h170.67v335.448H170.67z" fill="#F5F5F5">
+                    </path>
+                    <path d="M503.172 335.724H341.333V.276h161.839A8.829 8.829 0 01512 9.104v317.793a8.828 8.828 0 01-8.828 8.827z" fill="#FF4B55">
+                    </path>
+                   </g>
+                  </svg>
+                 </span>
+                 France
+                </div>
+                <span class="kcRM9 _2_xOe _3Wx6b FUcqi">
+                 <svg data-name="Calque 1" height="1em" viewbox="0 0 24 24" width="1em">
+                  <path d="M23.37 5.62a2.15 2.15 0 00-3 0L12 13.87 3.68 5.62a2.2 2.2 0 00-3.05 0 2.1 2.1 0 000 3l9.86 9.76a2.14 2.14 0 003 0l9.86-9.76a2.1 2.1 0 00.02-3z">
+                  </path>
+                 </svg>
+                </span>
+               </div>
+              </div>
+             </li>
+            </ul>
+           </div>
+          </div>
+          <ul class="_2hEW9">
+           <li class="_1de9x _2hArU">
+            leboncoin Groupe :
+           </li>
+           <li class="_1de9x">
+            <a href="https://www.avendrealouer.fr" rel="noopener noreferrer" target="_blank" title="AVendreALouer">
+             AVendreALouer
+            </a>
+           </li>
+           <li class="_1de9x">
+            <a href="https://immobilierneuf.leboncoin.fr/" rel="noopener noreferrer" target="_blank" title="leboncoin Immobilier Neuf">
+             leboncoin Immobilier Neuf
+            </a>
+           </li>
+           <li class="_1de9x">
+            <a href="https://www.largus.fr" rel="noopener noreferrer" target="_blank" title="L'argus">
+             L'argus
+            </a>
+           </li>
+           <li class="_1de9x">
+            <a href="https://www.paycar.fr/" rel="noopener noreferrer" target="_blank" title="Paycar">
+             Paycar
+            </a>
+           </li>
+           <li class="_1de9x">
+            <a href="https://www.agriaffaires.com/#xtor=CS3-38-[leboncoin]-[lien]-[lien_footer]-[agriaffaires]" rel="noopener noreferrer" target="_blank" title="Agriaffaires">
+             Agriaffaires
+            </a>
+           </li>
+           <li class="_1de9x">
+            <a href="https://www.machineryzone.fr/#xtor=CS3-38-[leboncoin]-[lien]-[lien_footer]-[machineryzone]" rel="noopener noreferrer" target="_blank" title="MachineryZone">
+             MachineryZone
+            </a>
+           </li>
+           <li class="_1de9x">
+            <a href="https://www.truckscorner.fr/#xtor=CS3-38-[leboncoin]-[lien]-[lien_footer]-[truckscorner]" rel="noopener noreferrer" target="_blank" title="Truckscorner">
+             Truckscorner
+            </a>
+           </li>
+           <li class="_1de9x">
+            <a href="https://www.locasun.fr/" rel="noopener noreferrer" target="_blank" title="Locasun - Les locations vacances">
+             Locasun
+            </a>
+           </li>
+           <li class="_1de9x">
+            <a href="https://www.locasun-vp.fr/" rel="noopener noreferrer" target="_blank" title="Locasun-vp - Ventes privées de locations vacances et weekends">
+             Locasun-vp
+            </a>
+           </li>
+           <li class="_1de9x">
+            <a href="https://www.pilgo.com/" rel="noopener noreferrer" target="_blank" title="Pilgo">
+             Pilgo
+            </a>
+           </li>
+           <li class="_1de9x">
+            <a href="https://www.videdressing.com/" rel="noopener noreferrer" target="_blank" title="Videdressing">
+             Videdressing
+            </a>
+           </li>
+           <li class="_1de9x">
+            <a href="http://www.ledenicheur.fr" rel="noopener noreferrer" target="_blank" title="LeDénicheur">
+             LeDénicheur
+            </a>
+           </li>
+           <li class="_1de9x">
+            <a href="http://www.younited-credit.com" rel="noopener noreferrer" target="_blank" title="Younited Credit">
+             Younited Credit
+            </a>
+           </li>
+          </ul>
+         </div>
+         <div class="_1-1SA">
+          <span>
+           leboncoin 2006 - 2020
+          </span>
+          <div class="_1JqBX">
+           <span class="_1o09v _3klmW">
+            Retrouvez-nous sur
+           </span>
+           <a href="https://www.facebook.com/leboncoin-1565057520410527/" rel="noopener nofollow noreferrer" target="_blank">
+            <span class="kcRM9 _1eo84 _21dth _3Wx6b _3k87M">
+             <svg data-name="Calque 1" height="1em" viewbox="0 0 24 24" width="1em">
+              <path d="M22.68 0H1.32A1.32 1.32 0 000 1.32v21.36A1.32 1.32 0 001.32 24h11.51v-9.28H9.7v-3.63h3.13V8.41c0-3.1 1.88-4.79 4.65-4.79H18.87c.47 0 .93.06 1.4.11V7h-1.92a3 3 0 00-.71.07c-.87.21-1.07.84-1.07 1.69v2.31h3.6l-.47 3.63h-3.15V24h6.13A1.32 1.32 0 0024 22.68V1.32A1.32 1.32 0 0022.68 0z">
+              </path>
+             </svg>
+            </span>
+           </a>
+           <a href="https://twitter.com/leboncoin/" rel="noopener nofollow noreferrer" target="_blank">
+            <span class="kcRM9 _1eo84 _21dth _3Wx6b">
+             <svg data-name="Calque 1" height="1em" viewbox="0 0 24 24" width="1em">
+              <path d="M22.67 0H1.33A1.32 1.32 0 000 1.33v21.34A1.32 1.32 0 001.33 24h21.34A1.32 1.32 0 0024 22.67V1.33A1.32 1.32 0 0022.67 0zM18.4 8.78c-.11 5.53-3.6 9.38-8.9 9.62A8.77 8.77 0 014.33 17 6.4 6.4 0 009 15.64a3.25 3.25 0 01-3-2.29 4.84 4.84 0 001.32 0 3.27 3.27 0 01-2.51-3.25 2.42 2.42 0 001.32.36 3.55 3.55 0 01-1-4.33 9.5 9.5 0 006.65 3.37c-.78-3.37 3.74-5.17 5.54-2.89a8.17 8.17 0 002.05-.72 3.32 3.32 0 01-1.32 1.8 6.46 6.46 0 001.68-.48c-.12.61-.73 1.09-1.33 1.57z">
+              </path>
+             </svg>
+            </span>
+           </a>
+          </div>
+         </div>
+        </div>
+       </footer>
+      </div>
+      <span id="root-portal">
+      </span>
+     </main>
+     <div class="_2kvEo" data-qa-id="selectedNavigationLayer">
+     </div>
+    </section>
+    <span data-app-type="rav-next" hidden="" id="app-type">
+     version: 2020-05-07.8964
+    </span>
+   </div>
+  </div>
+  <script id="__NEXT_DATA__" type="application/json">
+   {"props":{"pageProps":{"ad":{"list_id":1725558214,"first_publication_date":"2019-12-22 10:26:28","index_date":"2020-04-11 19:27:25","status":"active","category_id":"9","category_name":"Ventes immobilières","subject":"Appartement 5 pièces 93 m²","body":"Vente Appartement 5 pièces\n\niad France - Laurence BISSON (07 72 43 18 64) vous propose : JE RESTE JOIGNABLE PENDANT LE CONFINEMENT. Paris 12.  A moins d'une minute du métro Dugommier et des commerces, lumineux appartement traversant de 5 pièces d'une superficie de 92 m² environ, comprenant une entrée, un spacieux séjour, quatre chambres, une cuisine américaine, une salle d'eau  et des wc séparés.\nTrès calme dans une copropriété très bien entretenue.\nUne cave complète ce bien.\nTrès beaux volumes, double vitrage. A visiter rapidement !\n\nLa présente annonce immobilière vise 1 lot principal situé dans une copropriété formant 40 lots au total ne faisant l'objet d'aucune procédure en cours et d'un montant de charges d'environ 338 € par mois (soit 4056 € annuel) déclaré par le vendeur.Honoraires d'agence à la charge du vendeur.Information d'affichage énergétique sur ce bien : DPE D indice 189 et GES E indice 44. La présente annonce immobilière a été rédigée sous la responsabilité éditoriale de Mme Laurence BISSON (ID 28744), Agent Commercial mandataire en immobilier immatriculé au Registre Spécial des Agents Commerciaux (RSAC) du Tribunal de Commerce de CRETEIL sous le numéro 838834836.\nRéférence annonce : 717017\nLes honoraires sont à la charge du vendeur\n\nA propos de la copropriété :\nPas de procédure en cours\nNombre de lots : 76\nCharges prévisionnelles annuelles : 4056 €","ad_type":"offer","url":"https://www.leboncoin.fr/ventes_immobilieres/1725558214.htm","price":[800000],"price_calendar":null,"images":{"thumb_url":"https://img6.leboncoin.fr/ad-thumb/4ddaf4dd8a3fe38ba98cf9b9d72f0d42ad664652.jpg","small_url":"https://img6.leboncoin.fr/ad-small/4ddaf4dd8a3fe38ba98cf9b9d72f0d42ad664652.jpg","nb_images":1,"urls":["https://img6.leboncoin.fr/ad-image/4ddaf4dd8a3fe38ba98cf9b9d72f0d42ad664652.jpg"],"urls_thumb":["https://img6.leboncoin.fr/ad-thumb/4ddaf4dd8a3fe38ba98cf9b9d72f0d42ad664652.jpg"],"urls_large":["https://img6.leboncoin.fr/ad-large/4ddaf4dd8a3fe38ba98cf9b9d72f0d42ad664652.jpg"]},"attributes":[{"key":"real_estate_type","value":"2","key_label":"Type de bien","value_label":"Appartement","generic":true},{"key":"square","value":"93","key_label":"Surface","value_label":"93 m²","generic":true},{"key":"rooms","value":"5","key_label":"Pièces","value_label":"5","generic":true},{"key":"energy_rate","value":"d","key_label":"Classe énergie","value_label":"D (de 151 à 230)","generic":true},{"key":"ges","value":"e","key_label":"GES","value_label":"E (de 36 à 55)","generic":true},{"key":"pro_rates_link","value":"https://bareme.iadfrance.fr/detail/28744","value_label":"https://bareme.iadfrance.fr/detail/28744","generic":false},{"key":"custom_ref","value":"717017","key_label":"Référence","value_label":"717017","generic":true},{"key":"immo_sell_type","value":"old","value_label":"old","generic":false},{"key":"is_import","value":"true","value_label":"true","generic":false},{"key":"lease_type","value":"sell","value_label":"sell","generic":false}],"location":{"country_id":"FR","region_id":"12","region_name":"Ile-de-France","department_id":"75","department_name":"Paris","city_label":"Paris 75012","city":"Paris","zipcode":"75012","lat":48.8351,"lng":2.44493,"source":"city","provider":"lbc","is_shape":true,"feature":{"type":"Feature","geometry":{"type":"Point","coordinates":[2.44493,48.8351]},"properties":null}},"owner":{"store_id":"35677176","user_id":"dd37483b-acca-42d0-ba2c-dd03d207a36b","type":"pro","name":"I@D FRANCE","siren":"838834836","pro_rates_link":"https://bareme.iadfrance.fr/detail/28744","no_salesmen":false},"options":{"has_option":false,"booster":false,"photosup":false,"urgent":false,"gallery":false,"sub_toplist":false},"has_phone":true}},"initialReduxState":{"account":{"isFetching":false},"advertising":{"cleanedAt":0,"habillage":{"isAdProgrammatic":false,"creativeId":"","targetURL":"","clickDelay":0,"noGutter":false,"clickEnabled":true,"clickThrough":false,"isAdGreagre":false,"isAdHtmlGreagre":false,"isFixedGutter":false,"isStandardHb":false}},"app":{},"cart":{"isFetching":false,"items":[]},"datalayer":{"event_name":"","isUtagReady":false},"lbcData":{"categories":{"isFetching":false},"searchParams":{"isFetching":false},"searchForm":{"isFetching":false}},"newHousing":{"sentNewHousingGroups":[],"downloadedNewHousingGroups":[],"displaySuccessPopin":false,"displayDownloadPopin":false,"isLoading":false},"p2pPayment":{"ad":null,"purchases":[],"sales":[]},"router":{"locationBeforeTransitions":null},"savedAd":{"isFetching":false,"disabled":false},"savedSearch":{"isFetching":false,"deleting":{"status":false}},"stores":{"byId":{},"error":false},"ui":{"isMobile":false,"lightbox":{"isOpen":false,"activeSlide":0},"isSearchFormOpen":false,"layersCount":0,"geolocation":{"isFetching":false,"coords":null,"error":null},"bodyClassNames":{"noScroll":false,"adSkin":false,"adSkinProgrammatic":false,"noGutter":false,"headerHidden":false},"bodyBackground":"","scrollbarWidth":0},"user":{"isPro":false,"isImport":false,"isFetching":false,"isAuthenticated":null,"notifications":{"messaging":null},"escrowRequiredFields":[],"mangopayRequiredFields":[],"scopes":[]},"webview":{"isWebView":false}}},"page":"/ClassifiedAd","query":{"cat":"ventes_immobilieres","id":"1725558214"},"buildId":"4atiaycSYB28kT6FCKtNJ","assetPrefix":"//rav-next-static.leboncoin.fr","runtimeConfig":{"ABTASTY_ENABLED":false,"RUM_ENABLED":true,"UNAUTHENTICATED_REDIRECT_URI":"/","FEATURES":{"HOLIDAYS_NEW_RESERVATION_ENABLED":true,"MY_SHOPPING_ENABLED":false,"P2PPAYMENT_ENABLED":true,"P2P_BUYER_OFFER_ENABLED":true,"P2P_DROP_OFF_COLISSIMO_ENABLED":false,"PAYMENT_CB_ENABLED":false,"PRO_DASHBOARD_ENABLED":false,"SEARCHFORM_AROUND_CITY_ENABLED":true,"NEW_RESA_PAGE_ENABLED":true,"GUEST_BOOKINGS_ENABLED":true,"TRACKING_RELOADED_ENABLED":true,"PACK_BOOSTER_SUBSCRIPTION_ENABLED":false,"NEW_AD_ACTION_ENABLED":true,"BATCH_AD_ACTION_ENABLED":{"pro":true,"part":true},"DIRECT_DEAL_ADVIEW_ENABLED":true,"ESCROW_D1_ENABLED":true,"ESCROW_PAYOUT_ENABLED":true,"MANGOPAY_ESCROW_PAYOUT_ENABLED":true,"JOB_CANDIDATE_RESUME_ENABLED":true,"REAL_ESTATE_TRENDS_ENABLED":false,"RATING_LISTING_ENABLED":true,"VEHICLE_PAYMENT_ENABLED":true,"VEHICLE_WIRE_PAYMENT_ENABLED":true,"VEHICLE_NEWAD_MONGOPAY_ENABLED":true,"ESCROW_D1_HOLIDAYS_ENABLED":true,"ADVIEW_NEWHOUSING_ENABLED":true,"ADVIEW_NEWHOUSING_LOAD_MORE_ENABLED":false,"DEFAULT_SKIN_ENABLED":false,"PRO_SPACE_HOTJAR_ENABLED":true,"DIDOMI_ENABLED":true,"OAUTH_CALLBACK_LOGS":false},"MESSAGING_INTEGRATIONS_NAMES":{"P2P":"fr.leboncoin.p2p","VACATIONRENTALS":"fr.leboncoin.vacationrentals","BUYEROFFER":"fr.leboncoin.buyer_offer","RATING":"fr.leboncoin.rating"},"DIRECT_DEAL":{"CATEGORIES_WHITE_LIST":{"MONDIAL_RELAY":[],"DISTANCE":[6,15,16,17,19,20,21,22,23,25,26,27,29,30,38,39,40,41,42,43,44,45,46,47,48,50,51,52,53,54,55,60,61,62,64],"COLISSIMO":[6,15,16,17,19,20,21,22,23,25,26,27,29,30,38,39,40,41,42,43,44,45,46,47,48,50,51,52,53,54,55,60,61,62,64]},"BUYER_FEES_WHITE_LIST":[6,15,16,17,19,20,21,25,26,27,29,30,38,39,40,41,43,44,45,46,48,50,51,52,55,60,61,62,64],"VOLUMINOUS_CATEGORIES":{"MONDIAL_RELAY":[6,19,20,21,29,30,48,51,52,55,61,62,64],"COLISSIMO":[6,15,16,17,19,20,21,22,23,25,26,27,29,30,38,39,40,41,42,43,44,45,46,47,48,50,51,52,53,54,55,60,61,62,64]},"FORBIDDEN_SHIPPING_OFFER_CATEGORIES":{"MONDIAL_RELAY":[6,19,20,21,29,30,40,44,48,50,51,52,55,60,61,62,64],"COLISSIMO":[]}},"ADYEN":{"ADYEN_SCRIPT_SRC_P2P":"https://live.adyen.com/hpp/cse/js/4115318382451111.shtml","KEY_P2P":"10001|A94FFF35C60A2F4BEFC475321586A68F352A7B648A3EA41F4415B85FFE9ED789745C7D7577449FF79635825A5F178E4499C16133811179389190D84283C24AC4355B474D18D442A8B52471E22F3153A9CCA7C0E5D081E12558089CB7FCCB9299CE5702924D4C197D9041DDA49BD3CFA591F20F6E129089DCDC9CD39BA99E0A14035291B4EA028BE6FF62CB3ECB4E033FFA38693A68107254A00CA5B4BC0CC0392EB3743A69FA1C8B6F18C4AD59EBC34EC630F9D100B00D2F909A3C31A09BEA62B59679C1E99346EC3CE7DFE146105D131B417425F59D5EC6CBFBFE3826381589501ECB69B75985B6CD8D95FABF907B8C742A7FBD7CDEAC2A7272C48EEAFC446F","ADYEN_SCRIPT_SRC_PRIVATE":"https://live.adyen.com/hpp/cse/js/4115335573263758.shtml","KEY_PRIVATE":"10001|92BB95D348DB40D8F6D73F69B32ADD4DA86FF4F697BE1B2D66F75C26952537BBA6E3EBA5DE2DCECB40515CD953096A9F58D2DF6B30DBA702D87DFA72EBAB399B08559EE486975C4C205B4940E703D8469D31C83C76B7E6C55BCE1C6C47E95AA3DC454735F2306032314B4AA4DD749106FA06A24F3318ACBD25DDC7C910EFA7682B771A654B8B8868FAE785DE8E928FE977CC7463D4FCDB73CB1EACDD3F47CEBBD4DD1B22FAB9E03DDF4EB556603C822A456957593B8870ED162ADDDA983B2CDC8AC079B02E384CA197FEA5C590A481B88B697508123611BCB1ECFA3C242AC251ACBA0E06F8943A0568120A07923820F7F39C9ED5EF206322E6265A7E99B2E48F","ADYEN_SCRIPT_SRC_PRO":"https://live.adyen.com/hpp/cse/js/4115335573263758.shtml","KEY_PRO":"10001|92BB95D348DB40D8F6D73F69B32ADD4DA86FF4F697BE1B2D66F75C26952537BBA6E3EBA5DE2DCECB40515CD953096A9F58D2DF6B30DBA702D87DFA72EBAB399B08559EE486975C4C205B4940E703D8469D31C83C76B7E6C55BCE1C6C47E95AA3DC454735F2306032314B4AA4DD749106FA06A24F3318ACBD25DDC7C910EFA7682B771A654B8B8868FAE785DE8E928FE977CC7463D4FCDB73CB1EACDD3F47CEBBD4DD1B22FAB9E03DDF4EB556603C822A456957593B8870ED162ADDDA983B2CDC8AC079B02E384CA197FEA5C590A481B88B697508123611BCB1ECFA3C242AC251ACBA0E06F8943A0568120A07923820F7F39C9ED5EF206322E6265A7E99B2E48F","ADYEN_SCRIPT_SRC_LDV":"https://live.adyen.com/hpp/cse/js/4115433199970706.shtml","KEY_LDV":"10001|FA21D1E03356EBAE421EB0665C9418B43E43D57A79EF5C45B5AE6B284ABEDA4011B40F7635B45DBBC26516451CA0B21A9D3314E458A6C382E286E93252AD4DC4A757F072EBE768B95F61CC1016751B24F7625D6122C144E524A6410B729EE88DF83460BBAC26EE5FC96327E69206F1CFF9364AFB657BAB32AC1008C53829746067EE3E9BFF191D006E57BDD09CD7C312C8DDD40152CD0934A2D6B9DD50B2C33B6E8E205E92E391B92E0A2C866703FA2B581AC7C48A54224C4D4789E550D045CF7F6C1BE2997BD96500E42D9B1DEF2512E58269559487FF447DD9D4AFB39AD97FCF85516B9041A024F17FBA69B9A20F69FADE4EBD3372A3A1CF4BB6B2FE45498D","ADYEN_SCRIPT_SRC_AUTO":"https://live.adyen.com/hpp/cse/js/1115755359251428.shtml","KEY_AUTO":"10001|E51BC84041ADFE9F9CDB933053E69E87D436FEDD55B6F86DE8D4AB2108DADCDECF8EF21D0E98020FD2F8DCA647E82C2CD8BE0720E401F24044EF23A65ACC73B4E712F2D900CB84C69C5F53160C484F6519352685871980BA3FE3131E35607C8FE108E104F0CB2DC4C96DDA13B5168DD320558A3C2A86AC972F721B8D4205F343B48D96218541FF29F549626BAE23A83E9A7B064B653418171FC445FA9B326B8D263611CCCE9B16CCBA4626C503C40352FC0496A29260ED8F71F795FD42DEA152B7CEE53D7C8FC5C8CE1DF6523D679203346BABE7F0C0BD554FD27A86DC19A8C27DAE42702FAB95C40403A84713F33746FA3D167D9D76DA744AA1616766FD981D"},"LBC_CONNECT":{"URL":"https://auth.leboncoin.fr","CLIENT_ID":"lbc-front-web","ACCOUNT_PRO":"lbclegacy.pro","ACCESS_TOKEN_PATH":"/api/authorizer/v1/lbc/token","AUTHORIZATION_PATH":"/api/authorizer/v2/authorize","LOGOUT_PATH":"/api/authenticator/v1/users/logout","POST_LOGIN_ACTION":"lbc-post-login"},"LOCASUN":{"URL":"https://leboncoin.locasun.fr","MY_RESERVATION":"/espace-vacancier/rechercher-ma-reservation"},"API":{"URL":"https://api.leboncoin.fr","TRUST_REPUTATION_URL":"https://profile-api-lbc.trust-pro.mpi-internal.com","TRUST_REPUTATION_FEEDBACK_URL":"https://feedback-api-lbc.trust-pro.mpi-internal.com","KEY":"ba0c2dad52b3ec","KEY_JSON":"54bb0281238b45a03f0ee695f73e704f","AVAL":"https://api.espacepro-immo.com/lbc/secured","LBCIN":"https://api.immobilierneuf.leboncoin.fr","PANDA":"https://panda-stats.panda-pro.advgo.net"},"PRICING_TOOL":{"API_KEY":"ieshee7og4veegh9fakoighai3nit4fa4foobueThieKi9ooFetief3mae9see3hee9pohcha9Joochu"},"API_BASE_PATH":{"ACCOUNT":"/api/accounts/v1/accounts","AD_CLASSIFIER":"/api/ad-classifier","AD_GEOLOC":"/api/ad-geoloc/v1","AD_GEOLOC_V2":"/api/ad-geoloc/v2","AD_REPLY":"/api/adreply/v1/classified","ADS":"/api/ads","AUTH":"/api/oauth/v1","BOOKING":"/api/booking-api/v1","BOOSTER":"/api/booster/v1/accounts","CLASSIFIED":"/api/classified/v1/classified","CLASSIFIED_REPLY":"/api/frontend/v1/classified","CLASSIFIED_REPLY_ATTACHMENT":"/api/attachments/v1/upload","CLASSIFIED_REPLY_ATTACHMENT_DEFAULT":"/api/attachments/v1/me/default","DASHBOARD":"/api/dashboard/v1","DATA":"/api/frontend/v1/data","DYNAMIC_CONTENT":"/api/tools/cms/v2/page","DEAL":"/api/deal-api/v1","DEAL_V2":"/api/deal-api/v2","OFFER":"/api/offer-api/v1","DELIVERY":"/api/shippingproxy/v1","EVENTS":"/api/events/v1","FOLLOWME":"/api/followme/v1","HOLIDAYS":"/api/soyouz/v1","HOLIDAYS_PROPERTY":"/api/vacationrentals/v1/property","HOLIDAYS_GUEST_BOOKINGS":"/api/vacationrentals/v1/guest/me/bookings","MESSAGING_CLASSIFIED":"/api/classified/v1/messaging/classified","MESSAGING_PROXY":"/messaging/proxy","MORPHEUS":"/api/morpheus","MY_SEARCH":"/api/mysearch/v1/searches","PARROT":"/api/parrot","PRICING_TOOL":"/api/pricingtool/v1","P2P_CLASSIFIED":"/api/classified/v1/p2p","PINTAD":"/api/pintad/v1/public","PAYMENT_ORDER":"/api/public/payment/order","PAYMENT":"/api/public/payment/payment","PAYMENT_IBAN":"/api/public/payment/iban/me","CREDITS":"/api/public/credits","PAYMENT_HISTORY":"/api/public/paymenthistory/v1","P2P_PAYMENT":"/api/public/payment/deal/","FINDER":"/finder","SEARCH_CONFIG":"/api/search-config/v1","SEO":"/api/seo/v1","SHIPPING":"/api/shippingproxy/v1","SIMILAR_ADS":"/api/same/v2/search","SOYOUZ":"/api/soyouz/v1/api/lbc/v0.1/availabilities","STATS":"/api/stats/account","STATS_V2":"/api/stats/proxy/v2/account","STORES":"/v1/accounts","UTILS":"/api/utils","TAKEOUT":"/api/takeout/v1","KYC":"/api/kyc/v2/user/kyc","USER":"/api/users/v1/users","RATING":"/api/ratings/v1/deals","TRUST_REPUTATION_PROFILE":"/profile","AUTHENTICATOR_API":"/api/authenticator/v1","NEW_AD":"/api/adsubmit","NEW_AD_FILES":"/api/pintad/v1/public","VACATIONRENTALS":"/api/vacationrentals/v1","VEHICLE":"/api/vehicle-api/v1","VEHICLE_V2":"/api/vehicle-api/v2","VEHICLE_PLATE_NUMBER":"/api/ad-vehicle-api/v1","WALLET":"/api/wallet-api/v1","AD_OPTIONS":"/api/options/v1","ESCROW_ACCOUNTS":"/api/escrow-accounts/v1","MANGOPAY_ACCOUNTS":"/api/mangopay/v1","INQUIRY":"/api/salescontact/v1/inquiry","ONLINE_STORE":"/api/onlinestores/v1","ONLINE_STORE_EDIT":"/api/onlinestores-edit/v1","NOTIFICATIONS":"/api/notifications/v1","PACKS":"/api/public/packs","PANDA_BETA_TEST":"/v2/account/betatester","PROCONTACT":"/api/procontact/v1","LBCIN_HOUSING_PROJECT":"realestate/housingproject/","LBCIN_CONTACT":"realestate/contact/","ARGUS_MARKET_PRICE":"/api/ad-vehicle-valuation-api/v1/public/valuation"},"ASSETS_PUBLIC_PATH":"//static-rav.leboncoin.fr","ASSET_PREFIX":"//rav-next-static.leboncoin.fr","BASE_URL":"https://www.leboncoin.fr","CLIENT_ID":"frontweb","COOKIE_DOMAIN":".leboncoin.fr","COOKIE_LIFETIME":183,"FAQ_URL":"https://assistance.leboncoin.info/hc/fr","ACCOUNT_EDIT_URI":"/compte/edit","ACCOUNT_CV_URI":"/emploi/cv","ACCOUNT_CV_EMAIL_EDIT_URI":"/emploi/contact/edit","ACCOUNT_PART_CREATION_URI":"/compte/part/creation","ACCOUNT_PART_CONFIRMATION_URI":"/compte/part/confirmation","ACCOUNT_PART_DASHBOARD_URI":"/compte/part/mes-annonces","ACCOUNT_PRO_CREATION_URI":"/compte/pro/creation","ACCOUNT_PRO_CONFIRMATION_URI":"/compte/pro/confirmation","ACCOUNT_BOOKINGS_URI":"/compte/bookings","LEGACY_ACCOUNT_URL":"https://compteperso.leboncoin.fr","LEGACY_PHISHING":"https://www.leboncoin.fr/dc/phishing","LEGACY_POPUP_OPPOSITION":"https://www.leboncoin.fr/dc/popup_droits_opposition","LEGACY_POPUP_COLLECT":"https://www.leboncoin.fr/dc/popup_collecte_donnees_signaler","LEGACY_EDIT_AD_URL":"https://www.leboncoin.fr/ai/form/","LEGACY_MANAGE_AD_URL":"https://www.leboncoin.fr/ai/load/","LEGACY_SINGLE_BUMP_AD_URL":"https://compteperso.leboncoin.fr/store/main?cmd=top_list","LEGACY_BUMP_AD_URL":"https://compteperso.leboncoin.fr/store/main?cmd=sub_toplist","LEGACY_ALU_AD_URL":"https://compteperso.leboncoin.fr/store/main?cmd=gallery","LEGACY_URGENT_AD_URL":"https://compteperso.leboncoin.fr/store/main?cmd=urgent","LEGACY_DELETE_AD_URL":"https://compteperso.leboncoin.fr/store/main?cmd=adservices","LEGACY_ACCOUNT_PRO_URL":"https://comptepro.leboncoin.fr","SOYOUZ_URL":"https://vacances.leboncoin.fr/tripper/landing/","SOYOUZ_CHECK_URL":"https://vacances.leboncoin.fr/onboarding/check/","SOYOUZ_BOOKING_SUMMARY":"https://vacances.leboncoin.fr/tripper/bookingSummary/","HERE_PROXY_URL":"https://proxytile-{s}.leboncoin.fr/maptile/2.1/{type}/{mapID}/{scheme}/{z}/{x}/{y}/{size}/{format}?lg={language}","HERE_PROXY_OPTIONS":{"attribution":"\u003ca href=\"http://here.com/terms\" target=\"_blank\" rel=\"noopener\" tabindex=\"-1\"\u003e© HERE\u003c/a\u003e","subdomains":"1234","type":"maptile","scheme":"normal.day","mapID":"newest","language":"fre","format":"png8","size":"256"},"MAPBOX_URL":"https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}","MAPBOX_OPTIONS":{"attribution":"© \u003ca href=\"https://www.mapbox.com/about/maps/\"\u003eMapbox\u003c/a\u003e © \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e \u003cstrong\u003e\u003ca href=\"https://www.mapbox.com/map-feedback/\" target=\"_blank\"\u003eImprove this map\u003c/a\u003e\u003c/strong\u003e","id":"mapbox/streets-v11","zoomOffset":-1,"tileSize":512},"MAP_PROVIDER":"here","AUTHORIZED_MAP_PROVIDERS":["here"],"DISPLAY_SEE_MAP_BUTTON":true,"GUEST_BOOKING_CANCELLATION_TERMS_URI":"https://vcs.leboncoin.fr/aide/quelles-sont-les-conditions-dannulation","REAL_ESTATE_TRENDS_URL":"https://otm.espacepro-immo.com/lbcAuth","RENEGO_PRIX_URL":"https://services.pro-immobilier.leboncoin.fr/renegociation?id={lbcId}","COOKIE_KEYS":{"uuid":"uuid","access":"luat","refresh":"srt","savedAd":"watch_ads","legacyLoggedState":"s","currentRegion":"sq","saveOnboarding":"saveOnboarding","bookableOnboarding":"bookableOnboarding","shippableOnboarding":"shippableOnboarding","abtasty":"abtest_user","homeSearchFormNext":"nextSF","adviewClickmeter":"adview_clickmeter"},"USER":{"ACCOUNT_DASHBOARD_INFO_ALERT":"","ACCOUNT_TYPE":{"ACCOUNT_PART":1,"ACCOUNT_PRO":2},"ACTIVITY_SECTOR_IDS":{"EMPLOI":8,"IMMOBILIER":2,"LOISIRS":5,"MAISON":4,"MATERIEL_PROFESSIONNEL":7,"MULTIMEDIA":3,"NONE":0,"SERVICES":6,"VACANCES":9,"VEHICULES":1},"SECTOR_IDS":{"EMPLOYER":8,"REAL_ESTATE":2},"PERF_DASHBOARD_ACTIVITY_SECTOR_IDS":{"EMPLOI":8,"VEHICULES":1,"IMMOBILIER":2}},"APP_NEXUS_MEMBER_ID":3296,"TEALIUM_SCRIPT_URL":"//tags.tiqcdn.com/utag/schibsted/leboncoin-responsive/prod/utag.js","TEALIUM_SCRIPT_URL_WEBVIEW":"//tags.tiqcdn.com/utag/schibsted/leboncoin-mobile/prod/utag.js","TEALIUM_ENV":{"PROD":{"URL":"//tags.tiqcdn.com/utag/schibsted/leboncoin-responsive/prod/utag.js","URL_WEBVIEW":"//tags.tiqcdn.com/utag/schibsted/leboncoin-mobile/prod/utag.js","ID":3296},"QA":{"URL":"//tags.tiqcdn.com/utag/schibsted/leboncoin-responsive/dev/utag.js","URL_WEBVIEW":"//tags.tiqcdn.com/utag/schibsted/leboncoin-mobile/dev/utag.js","ID":3397},"DEV":{"URL":"//tags.tiqcdn.com/utag/schibsted/leboncoin-responsive/dev/utag.js","URL_WEBVIEW":"//tags.tiqcdn.com/utag/schibsted/leboncoin-mobile/dev/utag.js","ID":3397},"ADTECH":{"URL":"//tags.tiqcdn.com/utag/schibsted/leboncoin-responsive-adtech/dev/utag.js","URL_WEBVIEW":"//tags.tiqcdn.com/utag/schibsted/leboncoin-mobile/dev/utag.js","ID":3397},"DATA":{"URL":"//tags.tiqcdn.com/utag/schibsted/leboncoin-responsive-data/dev/utag.js","URL_WEBVIEW":"//tags.tiqcdn.com/utag/schibsted/leboncoin-mobile/dev/utag.js","ID":3397}},"SMART_TAG_ID":562498,"AD_LIST":{"DISPLAY_META_NB_RESULT_LIMIT":2,"COUNT_PER_PAGE":35,"ALU_COUNT_PER_PAGE":3,"ALU_POSITIONS":[11,19,28],"NATIVEADS_POSITIONS":[5,12,17,29,36],"AUTOPROMO_POSITIONS":[24],"DEMANDS":"demandes","OFFERS":"offres","LIMIT_SEARCH_LOCATION":10},"MOMENT_LOCALE":{"fr":{"monthsShort":["jan","fév","mars","avr","mai","juin","juillet","août","sept","oct","nov","déc"],"calendar":{"lastDay":"[Hier], HH:mm","sameDay":"[Aujourd'hui], HH:mm","lastWeek":null,"nextDay":null,"nextWeek":null,"sameElse":"DD MMM, HH:mm"}}},"DEFAULT_REGION_ID":"12","DEFAULT_ALL_REGIONS":true,"SAVED_SEARCH_LIMIT":50,"WIDGET_MESSAGING_ENV":"pro","ROLLBAR_ENV":"production:rav-next","FETCH_CACHE_DURATION":300,"FETCH_CACHE_STORAGE_PREFIX":"cache:","DATADOME_ON_FETCH_ENABLED":true,"PANDA_ENV":"pro","NEW_ACCOUNT_BEHAVIOR":true,"LICENSE_PLATE_OPEN_CATEGORIES":{"private":["2"],"pro":["2","5"]},"NEW_AD_OPEN_CATEGORIES":{"private":["2","3","4","5","6","7","9","10","11","12","13","15","16","17","19","20","21","22","23","25","26","27","28","29","30","32","33","34","35","36","38","39","40","41","42","43","44","45","46","47","48","49","50","51","52","53","54","55","57","58","59","60","61","62","63","64","65","67","68","70"],"pro":["2","3","4","5","6","7","9","10","12","11","13","15","16","17","19","20","21","22","23","25","26","27","28","29","30","32","34","39","40","41","42","43","44","45","46","47","48","49","50","51","52","53","54","55","57","58","59","60","61","62","63","64","67","68","69","70","74"]},"EDIT_AD_OPEN_CATEGORIES":{"private":["2","3","4","5","6","7","9","10","11","12","13","15","16","17","19","20","21","22","23","25","26","27","28","29","30","32","33","34","35","36","38","39","40","41","42","43","44","45","46","47","48","49","50","51","52","53","54","55","57","58","59","60","61","62","63","64","65","67","68","70"],"pro":["2","3","4","5","6","7","9","10","11","12","13","15","16","17","19","20","21","22","23","25","26","27","28","29","30","32","33","34","39","40","41","42","43","44","45","46","47","48","49","50","51","52","53","54","55","57","58","59","60","61","62","63","64","67","68","69","70","74"]},"AD_ACTION_OPEN_CATEGORIES":{"private":["33","74","15","43","16","17","19","20","45","39","46","21","52","22","53","47","42","23","54","25","26","27","28","55","29","30","40","41","48","57","58","59","60","32","61","62","63","64","34","35","49","36","65","38","2","3","4","5","6","44","50","7","51","9","10","11","13","12","67","68","70"],"pro":["33","74","12","67","68","69","70","15","43","16","17","19","20","45","39","46","21","52","22","53","47","42","23","54","25","26","27","28","55","29","30","40","41","48","57","58","59","60","32","61","62","63","64","34","49","36","38","2","3","4","5","6","44","50","7","51","9","10","11","13"]},"BATCH_AD_ACTION_OPEN_ACTIVITY_SECTORS":["1","3","4","5","6","7","8","9","10","2"],"BATCH_AD_ACTION_OPEN_STORE_ID":[39890991,189746,40844585,27378126],"OWNER_STORE_IDS":{"NEWHOUSING":"40479397","LOCASUN":"45554190"},"JOB_SEARCH_BETA_TESTERS_STORE_IDS":[47175695,375187,49951,66140,75146,79275,83367,126093,129617,145383,152056,154685,163281,168217,178415,179443,186950,187975,205556,224606,233318,247302,264722,269470,297932,315660,317224,319803,320616,342568,352239,352352,360269,361212,374962,378858,384580,389204,390555,390623,966282,1068088,1329418,1439631,1592600,1708979,1772575,2276525,2289236,2297189,2406248,2419874,2593092,2596469,2600804,2605257,2608450,2618088,2642538,2708733,2728370,2753807,2826907,2828743,2832003,2836782,2872471,2904500,2906827,3054337,3089272,3180955,3197262,3249307,3268630,3320232,3412910,3433032,3505642,3516349,3552940,3595959,3766290,3775679,3840511,3895336,3927569,3998335,4024494,4026198,4028628,4108684,4235275,4266255,4268502,4378281,4413585,4541461,4557273,4592246,4682157,4751448,4751579,4900835,5021918,5030235,5034782,5055265,5104788,5133435,5193573,5204305,5220948,5236369,5239231,5398379,5511343,5556818,5599260,5603960,5690598,5788849,5800559,5836170,5957261,6119247,6244177,6301132,6339953,6367377,6455452,6477574,6564764,6575859,6666164,6704828,6716376,6729444,6774329,6800349,6889338,7022064,7092178,7092925,7132366,7215305,7465754,7640447,7677683,7792781,8132942,8218540,8276556,8429665,8461383,8704549,8792457,8811507,8875344,8901166,8920659,8927035,8964450,8966132,8970781,8979243,8998562,9195347,9258272,9263942,9379206,9399290,9408825,9409155,9521846,9528382,9630393,9674783,9719234,9755907,9756181,9902755,10016773,10065280,10113688,10121835,10144817,10215948,10237392,10421433,10500528,10507421,10547986,10694336,10729622,10896828,10904717,10985245,11005809,11020325,11021539,11060384,11087827,11154107,11327130,11367309,11559940,11582426,11664549,11665106,11750617,11763831,11809683,12156432,12879796,13591446,13740291,13925888,14749305,14769177,14990125,15353100,15633261,15822860,15879974,15915477,16010525,16029672,16045008,16076922,16339709,16848190,17038174,17100126,17154524,17456753,17489071,17521734,17554690,17633511,17740271,17889351,17933880,18075342,18109286,18135567,18355938,18507871,18541649,18546954,18570588,18893622,18967299,18982641,19109314,19137250,19268216,19301419,19506733,19512170,19661773,19863721,19875746,19940319,20002336,20017464,20228793,20320224,20343199,20367884,20404152,20445984,20601133,20619810,20713426,20730881,20767785,20860815,20875358,20877979,20887457,20902762,21027789,21077313,21143903,21156527,21410034,21529011,21602696,21626879,21637634,21793045,21893271,21894744,21901316,22191710,22218305,22226258,22356827,22363981,22367367,22383886,22390484,22433781,22440283,22472990,22541274,22547387,22568513,22586702,22729355,22737540,22758315,22783610,22858744,22912164,22917123,22937991,23083989,23217382,23303154,23303282,23320899,23370885,23407533,23420506,23449827,23471326,23574949,23576888,23616173,23726859,23739288,23812140,23819939,23943417,23971094,24077327,24077349,24093934,24116545,24154779,24155570,24460890,24469477,24710741,24836400,24950565,24956193,25025445,25031808,25062791,25094647,25155442,25285662,25299997,25318801,25404914,25410171,25442444,25468578,25811213,25989074,25997267,26111748,26148599,26173038,26228782,26317414,26317562,26676839,26698387,26836834,26859427,26942733,26950917,27020678,27117980,27176626,27222901,27358844,27388510,27615087,27638998,27684315,27690903,27784372,27808309,27924323,27924584,28121022,28268575,28288405,28364681,28387834,28412265,28431623,28445382,28456781,28554345,28559326,28690721,28839413,28844793,28902310,28952911,28976380,28982447,28982768,28995820,29106211,29145655,29149549,29189902,29228662,29296292,29299433,29408964,29433440,29558956,29645612,29718327,29877074,29895168,29970566,30026229,30162210,30252779,30310003,30444151,30624996,30707555,30763126,30780010,30781099,30811001,30853205,30873250,30933582,31001465,31115777,31138532,31149041,31174773,31245643,31267255,31271384,31272468,31276899,31289245,31443110,31450695,31460849,31462289,31463486,31463686,31651098,31857082,32117401,32195913,32199450,32236101,32378178,32397688,32451282,32556016,32578061,32579761,32683729,32696361,32900752,32924751,32929016,33020422,33065316,33102479,33142235,33168392,33283805,33299432,33317830,33406166,33531015,33623544,33792431,33794641,33799458,34008878,34038721,34038822,34059803,34107043,34117974,34180453,34239058,34253957,34388113,34460747,34499812,34589471,34591910,34612932,34628413,34631227,34718315,34740325,34895871,34902176,34927446,34938301,34939623,34950082,34950587,34957794,35015336,35085662,35138257,35179827,35180411,35200289,35285642,35373941,35396653,35497049,35531537,35654726,35714899,35751209,35771306,35800436,35820526,35868024,35925318,35931323,35935117,36254021,36259029,36271847,36363952,36506913,36527539,36581854,36957543,36995568,37119426,37128419,37130229,37136181,37221867,37234444,37234726,37249145,37331939,37346847,37382693,37399610,37465733,37483244,37566859,37609343,37644743,37853236,37859046,37871779,37910263,37982797,38071967,38092939,38099611,38133426,38255978,38258017,38266494,38335031,38352092,38471393,38505090,38516792,38517147,38554218,38619314,38632531,38689773,38723669,38726619,38784747,38794352,38822358,38860675,38903140,38906571,38906927,39044173,39045151,39094746,39111249,39111500,39134236,39138059,39150440,39157521,39181873,39219775,39220326,39227111,39254989,39277026,39287682,39288606,39293568,39349190,39353325,39370119,39382724,39387616,39420464,39425464,39463357,39478491,39481263,39485412,39504125,39522209,39532955,39533681,39534395,39538145,39551169,39603860,39611562,39641578,39642475,39642710,39644630,39648672,39662853,39668698,39677807,39684395,39718962,39759223,39791395,39795604,39796578,39805305,39809703,39811636,39811866,39861057,39861720,39861905,39861991,39871306,39883035,39883730,39888209,39919800,39924639,39925445,39925546,39932815,39954335,39988029,39997143,40030524,40036797,40051489,40056302,40067979,40068269,40074138,40074440,40075357,40075563,40082169,40130879,40138487,40146098,40146910,40153028,40191933,40202761,40203209,40203666,40266255,40271613,40283099,40288342,40288618,40289760,40302807,40302824,40308477,40321185,40322103,40326434,40328112,40338924,40340273,40344451,40404503,40409047,40423486,40425621,40460854,40461968,40479416,40481525,40534265,40538796,40551307,40552907,40562297,40573007,40582210,40596493,40597337,40609017,40648726,40663512,40667260,40669031,40681757,40682575,40689542,40690649,40700581,40720917,40726764,40729527,40740187,40743685,40818338,40818863,40822476,40857086,40883267,40900465,40911248,40937691,40998625,41002730,41006454,41024617,41028455,41033919,41034717,41055138,41065284,41067204,41068044,41126068,41139739,41213583,41264630,41290828,41294101,41318130,41329759,41330957,41434949,41440785,41456016,41479412,41490326,41492526,41498267,41517946,41526368,41527814,41573709,41610676,41637752,41644607,41652302,41679971,41679971,41702280,41712623,41734438,41742487,41831458,41833365,41837797,41851549,41926166,41928075,41946651,41955122,42006483,42007988,42010786,42027472,42033983,42050553,42068530,42069247,42085780,42138615,42138789,42139365,42158937,42160467,42166071,42167482,42179872,42187915,42201627,42218747,42222803,42224165,42224184,42292629,42356152,42403287,42410544,42463490,42470619,42487053,42487171,42506252,42565561,42587181,42588854,42609337,42626749,42626790,42677619,42680358,42682698,42698380,42701502,42735683,42740878,42742677,42760183,42812499,42814500,42822289,42827541,42830374,42831587,42833738,42851915,42866041,42871276,42878493,42880424,42931553,42994757,43066303,43085552,43086014,43087062,43096566,43097423,43106380,43114898,43148603,43154054,43155103,43163688,43228925,43242394,43245136,43250512,43305906,43342343,43354377,43356684,43369354,43373533,43374170,43399333,43461467,43482627,43488859,43489023,43489067,43491352,43504657,43509144,43543101,43543369,43547693,43550809,43620201,43710297,43714635,43778542,43846437,43852116,43888451,43891489,43910314,43912709,43980284,43984302,43988009,43989955,43996596,43999890,44020580,44027760,44035719,44039636,44039991,44043230,44060319,44120814,44161744,44191584,44213509,44249041,44249154,44252777,44253889,44275494,44302950,44304682,44307958,44310703,44321542,44374302,44400285,44428130,44430711,44434861,44447212,44451383,44507255,44538774,44543269,44554479,44555456,44560946,44563287,44572570,44574442,44576233,44616794,44617703,44632237,44632903,44651812,44652181,44658229,44666209,44668317,44674966,44674980,44707844,44742719,44764321,44794534,44794987,44818605,44837618,44903102,44908679,44919349,44945440,44961586,45028360,45030265,45033774,45035459,45049208,45066091,45069573,45086867,45087709,45089009,45091948,45141579,45164995,45169410,45169447,45187165,45189030,45212909,45269548,45325578,45412288,45433526,45434525,45445320,45451678,45462926,45466532,45514773,45521365,45538058,45538497,45539167,45554272,45634775,45655940,45688280,45698918,45754935,45787567,45800091,45804400,45890363,45891496,45895273,45915531,45923101,45924573,45939616,45945380,46104124,46126426,46145326,46149605,46270376,11760754,8374611],"JOB_RESUME_DATABASE_SCOPE":"beta.lbc.emploi.cvtheque.read","NEW_AD_VO_OPTIN_CATEGORIES":["2","3","4","5","7"],"MESSAGING_PRO_USER_ACTIVITY_SECTOR_BLACKLIST":[1,2,8],"ESCROW_POLLING_TIME":600000,"HOME_TRACKING_DELAY_VARIANT":{"default":"accueil"},"ABTASTY_SCRIPT_URL":"//try.abtasty.com/09643a1c5bc909059579da8aac99e8f1.js","DATADOME_ENABLED":true,"GOOGLE_TAG_ENABLED":true,"ADEMO_TAG_ENABLED":true,"EMPLOI_CADRE_STORE_ID":"39890991","MAPBOX_ACCESS_TOKEN":"pk.eyJ1IjoiZnRtYXBzdGVhbSIsImEiOiJjazZtNDJrZG0wanpoM21wYW9zb2F1Z3FzIn0.H3UcG4gJPAk1v3cqiHAMqA"},"isFallback":false,"dynamicIds":["","+/XF","+MWg","+jR+","+ukC","+xJZ","/7fI","/9m/","/C0D","/W9N","/Z5k","/k85","/nXk","0Ckc","0Pyq","0Rjo","0hbd","0sDD","0yHH","1+3j","10Ff","16+v","16pK","1AM9","1M0f","1aVS","1gNm","1lUP","1nW+","1oGG","1s7d","20tv","21Iz","29bm","2E3X","2ZtY","2a9X","2gnW","2nea","37bT","3GWz","3LeK","3Yh9","3Yl7","3a7d","3bq8","3jvp","3qOp","3sVF","3vHj","4T00","4y9T","57yz","5FZr","5rdD","6CNl","6QxO","6SKJ","6VEt","6ZE2","6euo","6r1U","7Q0i","7dXr","7qbp","86Vq","8KKa","8cUt","8f65","8oQk","8u2n","96EP","9BcY","9KzV","9QAT","9RqW","9l5H","9mgI","9no6","9tBQ","A3ir","A7YF","AOxX","AYYK","Alv/","Ayw/","B0V/","BWxG","BZku","BdSw","Bjox","BlAN","BwWH","Bz/o","C0NT","C0Qw","C3U8","C7GO","C9X0","CRil","CeT4","CjlK","DH4C","DWi9","DaqL","Dox3","Dxyj","Dyjh","E0HR","E6Kf","E9VN","EIuN","ElcL","EsSy","F76q","FTbQ","FZoc","Ffo6","Fsg/","G3BU","G7x2","G9kx","GAZS","GC8K","GG4p","GJzS","GQih","GQjB","Guec","H1wg","HAnO","HUW/","HVqS","Hb70","Hesg","Hn3I","HwR1","I/X3","I0s4","I1JM","IH2C","IPR8","IQDy","InPE","ItN3","IxJP","J+4a","J0r8","J5ZS","J7fZ","J9be","JDtJ","JSI/","JaoD","JgMK","JhnK","K7k0","KNQ9","KOHo","KTwS","Ka+B","Kag6","KdZQ","Kg9y","L6tn","LIRC","LRT/","LS6L","LgfZ","Lp4i","Lqhh","Lw7Z","LwdB","Lweb","MPOt","MfDT","MqrH","N3yx","N74Y","NBxV","NG1M","NGEE","NWkW","O70y","O7gd","OGGv","OHwg","OP6u","OeRw","OivB","P+y9","PZY1","Pq/5","Prca","Q60Y","QDRO","QEoM","QKRE","QUQK","QZTI","Qi4X","Qxom","R2QH","R3oN","RAOH","RDt2","RN2L","S1mf","SV+X","SVwC","SgGb","SkG3","SlBt","TJg7","TYOc","Tiow","Tog7","Tqei","U+rW","U0SF","U1Gr","UOl8","UaQ4","UbMx","UlH0","UlJ9","UoDr","Uokl","Ur3w","Ure5","Uuw0","V1OQ","VHfm","VQlF","VRjs","VhwH","VosN","VvX0","WATs","WF/4","WJfr","WMk1","WTVG","WaKG","WiZ6","WpYu","Wy32","X/ue","X12z","XGUy","XGeL","XJ7w","XM5n","XV/q","XWxd","Xd2/","XgNk","XmA8","Xmrw","Xplx","XtV4","Y0Iy","Y6MG","YB/M","YgiV","Z0r/","Z66U","Z7Dl","ZKyR","ZPWp","ZRYs","ZjBG","Ztnl","Zx6f","a1HK","aGdT","aLX9","aduG","aieC","araf","b+tf","b8/W","bNXY","bREg","bryo","c5ZN","c8SX","cDMA","cHuH","cI3G","cRO0","cgj1","cikB","d2eM","dK7I","dTmS","dvDu","dwAz","dxBx","e/SH","eK5K","eLrX","eZ8+","eddV","efnJ","ehYo","ejIG","ekxu","et5v","euwe","f+nk","f3OK","f81B","fNR4","fqkH","fusa","gDge","gGqy","gIhf","gOOr","gj7x","gq08","hEKy","hFQr","hNY7","hVRK","haZ/","hgKR","hsaZ","hupV","hw4k","hwsR","i6Qg","iCzn","iH7l","iIEx","iQJs","iSfH","iq4+","j9mS","jEWe","jdAw","k8f5","kCT6","kkag","knv4","koT4","kwWh","lAU8","lCQQ","lRdO","lbEV","leGv","ljYH","llXk","lvTp","lze1","mDYb","mbnv","mj7Y","mjvu","n+DQ","n+FB","naOz","nnkc","npiA","o/PA","oHJU","oHZ7","ok6W","owAX","pEnC","pIKC","pWbW","pcGa","pzZe","q67a","qS6x","qrXS","qvHq","r7aM","rM3W","rfBp","rmiS","rzxf","s927","sSEr","sWo0","sYFn","sYm9","t9Hq","t9it","tFDq","tL9Z","teRu","tyWD","u6Mo","uAu6","uAwE","uKps","uONB","ua0F","uo83","urTD","usmT","uuOJ","vJpJ","vKb5","vVsu","vW97","vlo2","vucD","w3EY","w4ps","wBXm","wUVN","wWW3","wZ3q","wbLI","wdVQ","wiau","xK7f","xZiF","xlao","xmwO","y4nF","y7ZI","yGK6","yGZl","ySf8","yq2K","yt1J","z5y5","z6gz","z7Pu","zAKi","zHJA","zO1M","zd+9","zfG1","zhD2","zqy7","zsck","zuiK","AyzF","4R65","2W6z","bdgK","/dcb","aUsF","dI71","dP3i","eGJU","LGOF","PelH","gqOq","ilw0"]}
+  </script>
+  <script nomodule="" src="//rav-next-static.leboncoin.fr/_next/static/runtime/polyfills-aa8ad8da4ac946548f40.js">
+  </script>
+  <script async="" data-next-page="/ClassifiedAd" src="//rav-next-static.leboncoin.fr/_next/static/4atiaycSYB28kT6FCKtNJ/pages/ClassifiedAd.js">
+  </script>
+  <script async="" data-next-page="/_app" src="//rav-next-static.leboncoin.fr/_next/static/4atiaycSYB28kT6FCKtNJ/pages/_app.js">
+  </script>
+  <script async="" src="//rav-next-static.leboncoin.fr/_next/static/chunks/133.4865c4fc99fbea2cc741.js">
+  </script>
+  <script async="" src="//rav-next-static.leboncoin.fr/_next/static/chunks/0b7b90cd.1ab0dc96aaace68fcbf2.js">
+  </script>
+  <script async="" src="//rav-next-static.leboncoin.fr/_next/static/chunks/3fc90e8197f3fd1404414d6ea0117e0ae0a71ccf.b2b125e4ecb99005ca76.js">
+  </script>
+  <script async="" src="//rav-next-static.leboncoin.fr/_next/static/chunks/131.5aaa6569e2f29b1db1f7.js">
+  </script>
+  <script async="" src="//rav-next-static.leboncoin.fr/_next/static/chunks/45.41c90bf26945beaf6e8c.js">
+  </script>
+  <script async="" src="//rav-next-static.leboncoin.fr/_next/static/runtime/webpack-dc809ed45d3334ff5b1f.js">
+  </script>
+  <script async="" src="//rav-next-static.leboncoin.fr/_next/static/chunks/framework.eb2c1afe73034d15e0f5.js">
+  </script>
+  <script async="" src="//rav-next-static.leboncoin.fr/_next/static/chunks/11132306.bb9b6039f156b3735a45.js">
+  </script>
+  <script async="" src="//rav-next-static.leboncoin.fr/_next/static/chunks/commons.fe9c3de5f73b497ccc95.js">
+  </script>
+  <script async="" src="//rav-next-static.leboncoin.fr/_next/static/chunks/69aeba1416cdadf8f571a18a70dbab079e85c6c5.64aab9e69e0fd5b1466d.js">
+  </script>
+  <script async="" src="//rav-next-static.leboncoin.fr/_next/static/chunks/2db0458e9889689012228538a670078e58061209.70d21defb6d527e9ffe1.js">
+  </script>
+  <script async="" src="//rav-next-static.leboncoin.fr/_next/static/chunks/ddf6c3912d89ee28e0642c372940e425d7757b7d.8ab8dc194742fab5f8d5.js">
+  </script>
+  <script async="" src="//rav-next-static.leboncoin.fr/_next/static/chunks/130bdf33ff039942d0155643a0c750b44e57a5d2.09604a86b10f45503b8a.js">
+  </script>
+  <script async="" src="//rav-next-static.leboncoin.fr/_next/static/chunks/23b906441f49f946dddbd949df4e1f008977d6da.06c2ebe2ab05a4ee77d9.js">
+  </script>
+  <script async="" src="//rav-next-static.leboncoin.fr/_next/static/chunks/7480f0f03e35850936d6f3ddaf42b46b91ccfe80.2042c5b9c8c06b099f03.js">
+  </script>
+  <script async="" src="//rav-next-static.leboncoin.fr/_next/static/chunks/e80f8e8b99345d2bc3c84aa7c878e4a986fa2eec.7c4fc6ea66774a84d8ae.js">
+  </script>
+  <script async="" src="//rav-next-static.leboncoin.fr/_next/static/chunks/a2bee6e1f61cfb28a396299c30cd7f3586854796.5344b14a1a3c7fd62d1f.js">
+  </script>
+  <script async="" src="//rav-next-static.leboncoin.fr/_next/static/chunks/1bfeb1e3a4905f4940bc5180832d29dc7642b715.4d929fe0ddd4fa3d2fba.js">
+  </script>
+  <script async="" src="//rav-next-static.leboncoin.fr/_next/static/chunks/a236c4a436494cab68080daceebf6f3592f19dcf.95854ae38486abcfb204.js">
+  </script>
+  <script async="" src="//rav-next-static.leboncoin.fr/_next/static/chunks/e3dcc59dcc81b1c9a25956ffec2ed7b87a9b9043.2365bcbd47c75085f205.js">
+  </script>
+  <script async="" src="//rav-next-static.leboncoin.fr/_next/static/chunks/025188821c5917760416918848226d3e73c03e54.d50694589481b95259cc.js">
+  </script>
+  <script async="" src="//rav-next-static.leboncoin.fr/_next/static/chunks/c331c57bea6a3945b645ea4b3ab4a50ccb6517c2.18aab1247b56609153d2.js">
+  </script>
+  <script async="" src="//rav-next-static.leboncoin.fr/_next/static/chunks/b12ebcb7bc1220f3d0e3a01dfe8c2e036372a6c2.5779598692e200e46a71.js">
+  </script>
+  <script async="" src="//rav-next-static.leboncoin.fr/_next/static/chunks/3b043ee6aaf9474606eeb546fcc4b2e97fdd80d9.677256d9128b5d1f1171.js">
+  </script>
+  <script async="" src="//rav-next-static.leboncoin.fr/_next/static/chunks/be51ef284efd6293ebb04c3f90ca4400ffc42db8.27d22ed68292694643e6.js">
+  </script>
+  <script async="" src="//rav-next-static.leboncoin.fr/_next/static/chunks/0b6050362f6efb75431e01a3766765a2c2167d3a.d5e32e163c4af2fc58ac.js">
+  </script>
+  <script async="" src="//rav-next-static.leboncoin.fr/_next/static/chunks/styles.022ffcb8a13c0144b8e9.js">
+  </script>
+  <script async="" src="//rav-next-static.leboncoin.fr/_next/static/runtime/main-fa494c894cb77e9277f9.js">
+  </script>
+  <script async="" src="//rav-next-static.leboncoin.fr/_next/static/chunks/6178c45b67b3838da8c7e763ba9782f95ff37e3c.f5275292ed91f8187dcd.js">
+  </script>
+  <script async="" src="//rav-next-static.leboncoin.fr/_next/static/chunks/0604d6a0570947ab7ad43eb7a237e28ee4584ac0.9dcef2cfa59352424fa6.js">
+  </script>
+  <script async="" src="//rav-next-static.leboncoin.fr/_next/static/chunks/aea9981fc446234a7f47ca700cecaf266c8d4b42.6c88c12875787a12063e.js">
+  </script>
+  <script async="" src="//rav-next-static.leboncoin.fr/_next/static/chunks/cc75e3b140d0724de83363f22cc25aca48e24716.86f8e6e3bda3c1ea51e2.js">
+  </script>
+  <script async="" src="//rav-next-static.leboncoin.fr/_next/static/chunks/4d0192b9f3f9ff48bf9af875c595d027b7259c9f.bc3a9560b0e16053c6e5.js">
+  </script>
+  <script async="" src="//rav-next-static.leboncoin.fr/_next/static/chunks/4927db09598a291f68ef90ae43d72ed7ca612402.d581fb6b534b306c3e38.js">
+  </script>
+  <script async="" src="//rav-next-static.leboncoin.fr/_next/static/4atiaycSYB28kT6FCKtNJ/_buildManifest.js">
+  </script>
+ </body>
+</html>
